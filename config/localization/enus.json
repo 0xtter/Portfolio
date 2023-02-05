@@ -1,0 +1,146 @@
+{
+	"id": "enus",
+	"navbarMenu": {
+		"labelHome": "HOME",
+		"labelServices": "SERVICES",
+		"labelAboutMe": "ABOUT ME",
+		"labelPortifolio": "PROJECTS",
+		"labelExperience": "EXPERIENCE"
+	},
+	"landingPage": {
+		"apresentationText": "Hello, I'm",
+		"typeText": "Glayson Visgueira",
+		"resumeText": "Front-End Developer and I develop modern and high quality interfaces, focusing on performance, animations, responsiveness and built with SEO optimization.",
+		"buttonText": "Learn more"
+	},
+	"servicesOffer": {
+		"title": "Services offered",
+		"cards": {
+			"seo": {
+				"title": "SEO",
+				"contentText": "Through SEO techniques, I will increase the conversion rate of your product and increase its online visibility organically, that is, without depending on ads to be successful."
+			},
+			"ux": {
+				"title": "UX/UI",
+				"contentText": "Creation of responsive web design, focused on usability to provide the best user experience to generate leads for your product."
+			},
+			"branding": {
+				"title": "BRANDING",
+				"contentText": "I help you position your brand correctly, boosting positive results through good digital marketing practices."
+			},
+			"development": {
+				"title": "DEVELOPMENT",
+				"contentText": "Development of 100% personalized systems that will automate the administration of your business."
+			}
+		}
+	},
+	"aboutMePage": {
+		"title": "ABOUT ME",
+		"paragraph_one": "I'm a highly motivated front-end developer and always looking to learn new technologies. I have solid experience in React, React Native and Next.js, and I'm always available to face new challenges and improve my skills. I have a passion for creating amazing, responsive user interfaces, and I enjoy working on challenging problems. Furthermore, I am able to work effectively in a team and communicate clearly with other team members. I am always willing to learn and adapt to new situations, making me a flexible and reliable developer for any project.",
+		"paragraph_two": "I have greater aptitude for the Front-end area, with solid knowledge in the stack: React.Js, Next.Js, HTML, Css and Styled components.",
+		"paragraph_three": "Bachelor in Information Systems from Centro Universitário Maurício de Nassau, with graduation completed in the first half of 2021. I worked for 9 years at Claudino S/A, in which 8 years were in the administrative area and 1 year in the company's IT sector , more specifically in the team responsible for the company's Ecommerce, where I carry out daily maintenance or development of new functionalities that use the technologies: Python, Django, Django REST Framework, React.js, Next.Js and PostgreSQL.",
+		"github_card": {
+			"bio": "Fullstack developer with more experience in the Javascript stack, Node.js, React, React Native and Next.js.",
+			"followers": "Followers",
+			"following": "Following",
+			"repos": "Repos"
+		},
+		"alt_dev_img": "Glayson Visgueira Developer"
+	},
+	"portifolioPage": {
+		"title": "PROJECTS",
+		"labelFilter": "ALL",
+		"createdLabel": "Created at",
+		"projects": {
+			"id_1": {
+				"title": "AUTOMATIC IRRIGATION SYSTEM",
+				"description": "Implementation of an artificial intelligence algorithm, known as fuzzy algorithm (or fuzzy logic) that uses the jFuzzyLogic library. In this implementation, artificial intelligence is used so that depending on the current situation of three aspects, which are: temperature, luminosity and humidity, there is automatic activation of an irrigation system for agricultural crops."
+			},
+			"id_2": {
+				"title": "DEVRADAR",
+				"description": "Application resulting from the week Omnistack #10 by Rocketseat. The application aims to connect developers close to your current location and working with the same technologies."
+			},
+			"id_3": {
+				"title": "BE THE HERO",
+				"description": "Application resulting from Rocketseat's Omnistack #11 week. The application is a way to connect people to NGOs that need some kind of help."
+			},
+			"id_4": {
+				"title": "INTEGRA API WRAPPER",
+				"description": "Node.js server for using the Inthegra API provided by STRANS from Teresina - PI."
+			},
+			"id_5": {
+				"title": "LETMEASK",
+				"description": "Application resulting from Rocketseat's Next Level Week #06. The application provides an environment where the user can log in using his Google account and create rooms on subjects of interest for other users to create questions."
+			},
+			"id_6": {
+				"title": "PLANTMANAGER",
+				"description": "Application resulting from Rocketseat's Next Level Week #05. The application provides an irrigation scheduler for your plants, giving tips on each species, as well as the best irrigation schedules. The app displays a push notification whenever it's time to water your plant."
+			},
+			"id_7": {
+				"title": "NPS SURVEY SYSTEM",
+				"description": "Application resulting from Rocketseat's Next Level Week #04. The application allows calculating the company's NPS (Net Promoter Score) through satisfaction surveys sent to users by email."
+			},
+			"id_8": {
+				"title": "FASTTRACK API",
+				"description": "Backend of a Node.js server that provides a REST API that allows sharing the smartphone's geolocation to a cloud database maintained by MongoDB."
+			},
+			"id_9": {
+				"title": "INTHEGRE-SE APP",
+				"description": "Application that monitors the public bus fleet in the city of Teresina - PI, and displays on a map the current location of each bus in activity at the moment, with intervals of 30 seconds between each position update."
+			},
+			"id_10": {
+				"title": "RADAR POSITION CRAWLER",
+				"description": "Study of the BeautifulSoup library that, used with the Python programming language, makes it possible to collect data from websites. This algorithm searches the website of Teresina City Hall - PI and provides the download link of the current position of speed cameras in the city."
+			},
+			"id_11": {
+				"title": "PORTFOLIO PAGE",
+				"description": "Personal portfolio page, built using React.js, Next.js, Styled Components and hosted on the Vercel platform."
+			},
+			"id_12": {
+				"title": "LOGISTICS INFORMATION AGGREGATE",
+				"description": "System to aggregate the company's internal logistic information."
+			},
+			"id_13": {
+				"title": "LOGISTICS INFORMATION AGGREGATOR API",
+				"description": "API written in Javascript/Node.js and hosted on an EC2 server on AWS to provide the company's internal logistical information."
+			},
+			"id_14": {
+				"title": "BYTEBANK",
+				"description": "App resulting from Alura's Flutter track. Using Flutter to generate the cross-platform application, this application serves to register account numbers and their respective values ​​to be recorded in dynamic states for display in the app."
+			}
+		}
+	},
+	"experiencePage": {
+		"title": "EXPERIENCE",
+		"timeline": {
+			"labelPosition": "Position",
+			"labelTitle": "Title",
+			"labelCompany": "Company",
+			"labelCategory": "Category",
+			"labelInstitution": "Institution",
+			"labelProfessionalCourse": "Professional course",
+			"labelBachelorDegree": "Bachelor degree",
+			"labelExtensionCourse": "Extension course"
+		}
+	},
+	"footer": {
+		"labelNavigation": {
+			"title": "NAVIGATION",
+			"labelHome": "Home",
+			"labelServices": "Services",
+			"labelAboutMe": "About me",
+			"labelPortifolio": "Projects",
+			"labelExperience": "Experience"
+		},
+		"labelHost": {
+			"title": "WEBSITE HOSTING"
+		},
+		"labelSourceCode": {
+			"title": "SOURCE CODE"
+		},
+		"labelTechs": {
+			"title": "TECHNOLOGIES"
+		},
+		"labelBuildVersion": "Build"
+	}
+}
