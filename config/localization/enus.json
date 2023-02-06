@@ -14,23 +14,23 @@
 		"buttonText": "Learn more"
 	},
 	"servicesOffer": {
-		"title": "Services offered",
+		"title": "Mes domaines",
 		"cards": {
-			"seo": {
-				"title": "SEO",
-				"contentText": "Through SEO techniques, I will increase the conversion rate of your product and increase its online visibility organically, that is, without depending on ads to be successful."
+			"forensique": {
+				"title": "Forensique",
+				"contentText": "Solide connaissances des principes de base de la forensique informatique, y compris les méthodes d'acquisition de données, d'analyse des données et de présentation des preuves."
 			},
-			"ux": {
-				"title": "UX/UI",
-				"contentText": "Creation of responsive web design, focused on usability to provide the best user experience to generate leads for your product."
+			"devsecops": {
+				"title": "DevSecOps",
+				"contentText": "Forte compréhension du développement, de la sécurité informatique et de la conformité réglementaire. Compétent en CI/CD, sécurité réseau, tests d'intrusion."
 			},
-			"branding": {
-				"title": "BRANDING",
-				"contentText": "I help you position your brand correctly, boosting positive results through good digital marketing practices."
+			"pentesting": {
+				"title": "Pentesting",
+				"contentText": "Test d'intrusion et vulnérabilités courantes. Reconnaissance, exploitation, post-exploitation et reporting. Indentification et correction des vulnérabilités pour assurer la sécurité des systèmes et des réseaux."
 			},
-			"development": {
-				"title": "DEVELOPMENT",
-				"contentText": "Development of 100% personalized systems that will automate the administration of your business."
+			"developpement": {
+				"title": "Développement",
+				"contentText": "Expertise en Java, Python, C++, JavaScript, Bash, Docker et autres. Utilisation avancée de Github pour la gestion de versions et la collaboration sur des projets personnels et professionnels. "
 			}
 		}
 	},

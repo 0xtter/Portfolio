@@ -191,7 +191,7 @@ export default function LayoutTemplate({ children }) {
 					</Fade>
 
 					<Fade top delay={300} duration={200}>
-						<Link href="#section-sobre-mim" passHref>
+						<Link href="#section-a-propos" passHref>
 							<NavbarOption>{language.navbarMenu.labelAboutMe}</NavbarOption>
 						</Link>
 					</Fade>

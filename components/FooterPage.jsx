@@ -260,7 +260,7 @@ export default function FooterPage(props) {
 						<Link href="#section-services" passHref>
 							<FooterText>{language.footer.labelNavigation.labelServices}</FooterText>
 						</Link>
-						<Link href="#section-sobre-mim" passHref>
+						<Link href="#section-a-propos" passHref>
 							<FooterText>{language.footer.labelNavigation.labelAboutMe}</FooterText>
 						</Link>
 						<Link href="#section-portifolio" passHref>

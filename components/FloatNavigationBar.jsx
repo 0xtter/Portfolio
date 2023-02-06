@@ -81,12 +81,12 @@ export default function FloatNavigationBar(props) {
 				</NavOption>
 			</Link>
 
-			<Link href="#section-sobre-mim" passHref>
+			<Link href="#section-a-propos" passHref>
 				<NavOption
 					className="button"
-					isActive={active == "#section-sobre-mim" ? true : false}
+					isActive={active == "#section-a-propos" ? true : false}
 					onClick={() => {
-						setActive("#section-sobre-mim");
+						setActive("#section-a-propos");
 					}}>
 					<Timeline />
 				</NavOption>

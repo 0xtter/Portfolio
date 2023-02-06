@@ -3,7 +3,7 @@
 	"navbarMenu": {
 		"labelHome": "MENU PRINCIPAL",
 		"labelServices": "MES DOMAINES",
-		"labelAboutMe": "A PROPOS DE MOI",
+		"labelAboutMe": "WHOAMI",
 		"labelPortifolio": "PROJETS",
 		"labelExperience": "EXPERIENCES"
 	},
@@ -16,36 +16,38 @@
 	"servicesOffer": {
 		"title": "Mes domaines",
 		"cards": {
-			"seo": {
+			"forensique": {
 				"title": "Forensique",
 				"contentText": "Solide connaissances des principes de base de la forensique informatique, y compris les méthodes d'acquisition de données, d'analyse des données et de présentation des preuves."
 			},
-			"ux": {
+			"devsecops": {
 				"title": "DevSecOps",
 				"contentText": "Forte compréhension du développement, de la sécurité informatique et de la conformité réglementaire. Compétent en CI/CD, sécurité réseau, tests d'intrusion."
 			},
-			"branding": {
+			"pentesting": {
 				"title": "Pentesting",
 				"contentText": "Test d'intrusion et vulnérabilités courantes. Reconnaissance, exploitation, post-exploitation et reporting. Indentification et correction des vulnérabilités pour assurer la sécurité des systèmes et des réseaux."
 			},
-			"development": {
+			"developpement": {
 				"title": "Développement",
 				"contentText": "Expertise en Java, Python, C++, JavaScript, Bash, Docker et autres. Utilisation avancée de Github pour la gestion de versions et la collaboration sur des projets personnels et professionnels. "
 			}
 		}
 	},
 	"aboutMePage": {
-		"title": "SOBRE MIM",
-		"paragraph_one": "Sou um desenvolvedor front-end altamente motivado e sempre buscando aprender novas tecnologias. Tenho experiência sólida em React, React Native e Next.js, e estou sempre disponível para enfrentar novos desafios e aprimorar minhas habilidades. Tenho paixão por criar interfaces de usuário incríveis e responsivas, e gosto de trabalhar em problemas desafiadores. Além disso, sou capaz de trabalhar eficazmente em equipe e comunicar claramente com outros membros do time. Estou sempre disposto a aprender e me adaptar a novas situações, fazendo com que eu seja um desenvolvedor flexível e confiável para qualquer projeto. ",
-		"paragraph_two": "Possuo maior aptidão para área de Front-end e conhecimentos sólidos na stack: React.Js, Next.Js, HTML, Css e Styled components.",
-		"paragraph_three": "Bacharel em Sistemas de informações pelo Centro Universitário Maurício de Nassau, com graduação finalizada no primeiro semestre de 2021. Trabalhei durante 9 anos na empresa Claudino S/A, nos quais 8 anos foram na área administrativa e a 1 ano no setor de TI da empresa, mais especificamente na equipe responsável pelo Ecommerce da empresa, onde diariamente realizo manutenções ou desenvolvimento de novas funcionalidades que utilizam as tecnologias: Python, Django, Django REST Framework, React.js, Next.Js e PostgreSQL.",
+		"title": "WHOAMI",
+		"paragraph_one": "Elève en 5ème année à ISEN Lille, je suis actuellement en contrat de professionnalisation à Orange Cyberdefense en tant qu'ingénieur CSIRT.",
+		"paragraph_two": "Ingénieur en cybersécurité expérimenté, je suis passionné par la protection des données et la sécurité informatique. Avec de l'expérience dans l'industrie, je suis spécialisé dans la mise en place de systèmes de sécurité solides pour les entreprises de toutes tailles. Je suis également compétent en matière de tests de pénétration, de conformité réglementaire et de gestion des incidents de sécurité. Mon objectif est de fournir des solutions de sécurité avancées pour aider à protéger les actifs numériques.",
+		"paragraph_three": "En tant que self-hosteur, je crois fermement que chacun devrait avoir le contrôle total sur ses données et ses services en ligne. C'est pourquoi je me suis spécialisé dans l'hébergement de mes propres sites web, applications et services, pour éviter la dépendance aux grands fournisseurs de services en ligne. J'aime partager mes connaissances et expériences avec les autres pour les aider à comprendre les avantages du self-hébergement et à se lancer dans l'aventure. Mon objectif est de faciliter l'accès à l'autonomie en matière de technologies numériques pour tous.",
 		"github_card": {
-			"bio": "Fullstack developer com maior experiência na stack Javascript, Node.js, React, React Native e Next.js.",
-			"followers": "Seguidores",
-			"following": "Seguindo",
-			"repos": "Repositórios"
+			"bio1": "🧑‍💻 Ingénieur cybersécurité ",
+			"bio2": "🕵️ Analyste CSIRT à Orange Cyberdéfense",
+			"bio3": "📚 Étudiant à ISEN Lille",
+			"followers": "followers",
+			"following": "following",
+			"repos": "repos"
 		},
-		"alt_dev_img": "Desenvolvedor Glayson Visgueira"
+		"alt_dev_img": "Thomas Desrumeaux"
 	},
 	"portifolioPage": {
 		"title": "PROJETOS",

@@ -172,7 +172,7 @@ export default function HomePage() {
 					<SubTitleLanding>{language.landingPage.apresentationText}</SubTitleLanding>
 					<Typed strings={["Thomas Desrumeaux"]} typeSpeed={80} className="type-string " />
 					<SubTitleLanding>{language.landingPage.resumeText}</SubTitleLanding>
-					<Link href="#section-sobre-mim" passHref>
+					<Link href="#section-a-propos" passHref>
 						<ButtonSaibaMais>{language.landingPage.buttonText}</ButtonSaibaMais>
 					</Link>
 					<SocialNetworkRowStack />

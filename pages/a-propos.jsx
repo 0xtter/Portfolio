@@ -12,8 +12,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 import SocialNetworkRowStack from "@/components/SocialNetworkRowStack";
 import TechGrid from "@/components/TechsGrid";
 
-//PDFs
-import curriculoPTBR from "../public/pdf/curriculo-ptbr.pdf";
+import CV_fr from "@/public/pdf/CV_ThomasDesrumeaux.pdf"
 
 const WrapperAboutMe = styled.div`
 	display: flex;
@@ -255,7 +254,7 @@ const ButtonCV = styled.a`
 	}
 `;
 
-const SectionSobreMim = styled.section`
+const SectionAProposDeMoi = styled.section`
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
@@ -265,13 +264,13 @@ const SectionSobreMim = styled.section`
 	//height: auto;
 `;
 
-export default function SobreMim(props) {
+export default function AProposDeMoi(props) {
 	const { language } = useContext(SettingsContext);
 	const [githubUserData, setGithubUserData] = useState({});
 
 	useEffect(() => {
 		async function fetchGithubStats() {
-			const response = await fetch("https://api.github.com/users/glaysonvisgueira");
+			const response = await fetch("https://api.github.com/users/0xtter");
 			const json = await response.json();
 			setGithubUserData(json);
 		}
@@ -279,7 +278,7 @@ export default function SobreMim(props) {
 	}, []);
 
 	return (
-		<SectionSobreMim id="section-sobre-mim">
+		<SectionAProposDeMoi id="section-a-propos">
 			<WrapperAboutMe>
 				<div className="container">
 					<div className="left-view">
@@ -294,7 +293,9 @@ export default function SobreMim(props) {
 									<a href={githubUserData?.html_url} target="_blank">
 										@{githubUserData?.login}
 									</a>
-									<p>{language.aboutMePage.github_card.bio}</p>
+									<p>{language.aboutMePage.github_card.bio1}</p>
+									<p>{language.aboutMePage.github_card.bio2}</p>
+									<p>{language.aboutMePage.github_card.bio3}</p>
 									<div className="github-stats">
 										<div className="stats">
 											<p>{githubUserData?.followers}</p>
@@ -321,7 +322,7 @@ export default function SobreMim(props) {
 							<p>{language.aboutMePage.paragraph_three}</p>
 							<div className="tech-and-cv">
 								<SocialNetworkRowStack />
-								<ButtonCV href={curriculoPTBR} target="_blank" data-splitbee-event="Download CV">
+								<ButtonCV href={CV_fr} target="_blank" data-splitbee-event="Download CV">
 									Download CV
 								</ButtonCV>
 							</div>
@@ -330,6 +331,6 @@ export default function SobreMim(props) {
 				</div>
 				<TechGrid />
 			</WrapperAboutMe>
-		</SectionSobreMim>
+		</SectionAProposDeMoi>
 	);
 }
