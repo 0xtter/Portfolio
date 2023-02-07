@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import styled from "styled-components";
 import ScrollAnimation from "react-animate-on-scroll";
 
-//Contexto
+//Context
 import { SettingsContext } from "@/context/SettingsContext";
 
 //Styled-components
@@ -38,6 +38,7 @@ import { Filter } from "@styled-icons/fa-solid/Filter";
 
 //Custom components
 import Tooltip from "@/components/Tooltip";
+import FetchData from "@/components/RepositoryList";
 
 const ContainerGrid = styled.div`
 	display: grid;
@@ -242,14 +243,27 @@ const SectionPortifolio = styled.section`
 	padding-top: 60px;
 `;
 
+
 export default function Portifolio() {
 	const { language } = useContext(SettingsContext);
 	const [stack, setStack] = useState("TODOS");
 	const [view, setView] = useState("grid");
 
+	// Fetch data from my personnal GitHub account to list repositories
+	const [url, setUrl] = useState('https://api.github.com/users/0xtter/repos');
+
+	const data = FetchData(url);
+
+	var idCount = 0;
+
+	// var gitProjects = data.map(project => ({
+	// 	id: idCount++,
+	// 	title: data.name
+	// }))	// console.log(gitProjects)
+
 	const projects = [
 		{
-			id: 1,
+			id: idCount++,
 			title: language.portifolioPage.projects.id_1.title,
 			description: language.portifolioPage.projects.id_1.description,
 			techs: [
@@ -265,7 +279,7 @@ export default function Portifolio() {
 			created_at: "09/06/2019",
 		},
 		{
-			id: 2,
+			id: idCount++,
 			title: language.portifolioPage.projects.id_2.title,
 			description: language.portifolioPage.projects.id_2.description,
 			techs: [
@@ -293,7 +307,7 @@ export default function Portifolio() {
 			created_at: "02/02/2020",
 		},
 		{
-			id: 3,
+			id: idCount++,
 			title: language.portifolioPage.projects.id_3.title,
 			description: language.portifolioPage.projects.id_3.description,
 			techs: [
@@ -327,7 +341,7 @@ export default function Portifolio() {
 			created_at: "26/04/2020",
 		},
 		{
-			id: 4,
+			id: idCount++,
 			title: language.portifolioPage.projects.id_4.title,
 			description: language.portifolioPage.projects.id_4.description,
 			techs: [
@@ -343,7 +357,7 @@ export default function Portifolio() {
 			created_at: "04/04/2020",
 		},
 		{
-			id: 5,
+			id: idCount++,
 			title: language.portifolioPage.projects.id_5.title,
 			description: language.portifolioPage.projects.id_5.description,
 			techs: [
@@ -368,7 +382,7 @@ export default function Portifolio() {
 			created_at: "24/06/2021",
 		},
 		{
-			id: 6,
+			id: idCount++,
 			title: language.portifolioPage.projects.id_6.title,
 			description: language.portifolioPage.projects.id_6.description,
 			techs: [
@@ -387,7 +401,7 @@ export default function Portifolio() {
 			created_at: "19/04/2021",
 		},
 		{
-			id: 7,
+			id: idCount++,
 			title: language.portifolioPage.projects.id_7.title,
 			description: language.portifolioPage.projects.id_7.description,
 			techs: [
@@ -409,7 +423,7 @@ export default function Portifolio() {
 			created_at: "23/02/2021",
 		},
 		{
-			id: 8,
+			id: idCount++,
 			title: language.portifolioPage.projects.id_8.title,
 			description: language.portifolioPage.projects.id_8.description,
 			techs: [
@@ -431,7 +445,7 @@ export default function Portifolio() {
 			created_at: "27/11/2020",
 		},
 		{
-			id: 9,
+			id: idCount++,
 			title: language.portifolioPage.projects.id_9.title,
 			description: language.portifolioPage.projects.id_9.description,
 			techs: [
@@ -450,7 +464,7 @@ export default function Portifolio() {
 			created_at: "05/05/2020",
 		},
 		{
-			id: 10,
+			id: idCount++,
 			title: language.portifolioPage.projects.id_10.title,
 			description: language.portifolioPage.projects.id_10.description,
 			techs: [
@@ -463,7 +477,7 @@ export default function Portifolio() {
 			created_at: "16/06/2019",
 		},
 		{
-			id: 11,
+			id: idCount++,
 			title: language.portifolioPage.projects.id_11.title,
 			description: language.portifolioPage.projects.id_11.description,
 			techs: [
@@ -485,7 +499,7 @@ export default function Portifolio() {
 			created_at: "10/06/2022",
 		},
 		{
-			id: 12,
+			id: idCount++,
 			title: language.portifolioPage.projects.id_12.title,
 			description: language.portifolioPage.projects.id_12.description,
 			techs: [
@@ -501,7 +515,7 @@ export default function Portifolio() {
 			created_at: "29/06/2021",
 		},
 		{
-			id: 13,
+			id: idCount++,
 			title: language.portifolioPage.projects.id_13.title,
 			description: language.portifolioPage.projects.id_13.description,
 			techs: [
@@ -523,7 +537,7 @@ export default function Portifolio() {
 			created_at: "02/07/2021",
 		},
 		{
-			id: 14,
+			id: idCount++,
 			title: language.portifolioPage.projects.id_14.title,
 			description: language.portifolioPage.projects.id_14.description,
 			techs: [

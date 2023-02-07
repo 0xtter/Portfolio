@@ -15,7 +15,7 @@ import FooterPage from "@/components/FooterPage";
 import FloatNavigationBar from "@/components/FloatNavigationBar";
 import ScrollDownAnimation from "@/components/ScrollDownAnimation";
 
-//Contexto
+//Context
 import { SettingsContext } from "@/context/SettingsContext";
 
 const LandingPageContainer = styled.div`
@@ -168,6 +168,7 @@ export default function HomePage() {
 				keywords="Thomas Desrumeaux, Cybersécurité, Programmation, CSIRT, Pentesting"
 			/>
 			<LandingPageContainer>
+
 				<TitleLandingContainer>
 					<SubTitleLanding>{language.landingPage.apresentationText}</SubTitleLanding>
 					<Typed strings={["Thomas Desrumeaux"]} typeSpeed={80} className="type-string " />

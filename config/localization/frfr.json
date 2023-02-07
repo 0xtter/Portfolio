@@ -50,9 +50,9 @@
 		"alt_dev_img": "Thomas Desrumeaux"
 	},
 	"portifolioPage": {
-		"title": "PROJETOS",
-		"labelFilter": "TODOS",
-		"createdLabel": "Criado em",
+		"title": "PROJETS",
+		"labelFilter": "TOUS",
+		"createdLabel": "Créé le",
 		"projects": {
 			"id_1": {
 				"title": "SISTEMA DE IRRIGAÇÃO AUTOMÁTICO",
