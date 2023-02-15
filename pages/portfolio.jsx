@@ -221,12 +221,13 @@ const WrapperButtons = styled.div`
 
 function formatDate(dateString) {
 	const originalDate = new Date(dateString);
-	const day = originalDate.getDate();
-	const month = originalDate.getMonth() + 1;
+	const day = String(originalDate.getDate()).padStart(2, '0');
+	const month = String(originalDate.getMonth() + 1).padStart(2, '0');
 	const year = originalDate.getFullYear();
 	const formattedDate = `${day}/${month}/${year}`;
 	return formattedDate;
 }
+
 
 const Chip = styled.span`
 	color: ${(props) => (props.active == true ? props.theme.colors.backgroundSecondary : props.theme.colors.inactiveTitle)};
