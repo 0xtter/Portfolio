@@ -293,9 +293,9 @@ export default function AProposDeMoi(props) {
 									<a href={githubUserData?.html_url} target="_blank">
 										@{githubUserData?.login}
 									</a>
-									<p>{language.aboutMePage.github_card.bio1}</p>
-									<p>{language.aboutMePage.github_card.bio2}</p>
-									<p>{language.aboutMePage.github_card.bio3}</p>
+									{githubUserData?.bio?.split("|").map((line, index) => (
+										<p>{line}</p>
+									))}
 									<div className="github-stats">
 										<div className="stats">
 											<p>{githubUserData?.followers}</p>

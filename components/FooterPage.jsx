@@ -234,20 +234,17 @@ export default function FooterPage(props) {
 	}, []);
 
 	async function getLastCommit() {
-		const response = await fetch("https://api.github.com/repos/0xtter/0xtter/commits");
+		const response = await fetch("https://api.github.com/repos/0xtter/Portfolio/commits");
 		const json = await response.json();
-		//Setar no state somente as 6 primeiras letras do SHA code do último commit
-		try {		  
+		try {
 			setCommit(json[0].sha.slice(0, 6));
 		} catch (error) {
 			console.error(error);
 			setCommit("Error Loading...");
-			// Expected output: ReferenceError: nonExistentFunction is not defined
-			// (Note: the exact output may be browser-dependent)
-		  }
+		}
 	}
 
-	//Função para subir ao topo da página.
+	
 	const goToTop = () => {
 		window.scrollTo({
 			top: 0,

@@ -289,6 +289,117 @@ export default function Portifolio() {
 	const [url, setURL] = useState('https://api.github.com/users/0xtter/repos');
 	const data = FetchData(url);
 
+	const topicsIcons = {
+		"Robot": {
+			"iconName": "Robot",
+			"icon": <Robot />
+		},
+		"GithubOutline": {
+			"iconName": "GithubOutline",
+			"icon": <GithubOutline />
+		},
+		"Java": {
+			"iconName": "Java",
+			"icon": <Java />
+		},
+		"Amazonaws": {
+			"iconName": "Amazonaws",
+			"icon": <Amazonaws />
+		},
+		"GoogleCloud": {
+			"iconName": "GoogleCloud",
+			"icon": <GoogleCloud />
+		},
+		"Firebase": {
+			"iconName": "Firebase",
+			"icon": <Firebase />
+		},
+		"Mongodb": {
+			"iconName": "Mongodb",
+			"icon": <Mongodb />
+		},
+		"Sqlite": {
+			"iconName": "Sqlite",
+			"icon": <Sqlite />
+		},
+		"Javascript": {
+			"iconName": "Javascript",
+			"icon": <Javascript />
+		},
+		"ReactLogo": {
+			"iconName": "reactjs",
+			"icon": <ReactLogo />
+		},
+		"Nextdotjs": {
+			"iconName": "Nextdotjs",
+			"icon": <Nextdotjs />
+		},
+		"Python": {
+			"iconName": "Python",
+			"icon": <Python />
+		},
+		"Nodejs": {
+			"iconName": "Nodejs",
+			"icon": <Nodejs />
+		},
+		"LogoVercel": {
+			"iconName": "LogoVercel",
+			"icon": <LogoVercel />
+		},
+		"Styledcomponents": {
+			"iconName": "Styledcomponents",
+			"icon": <Styledcomponents />
+		},
+		"Css3": {
+			"iconName": "Css3",
+			"icon": <Css3 />
+		},
+		"html5": {
+			"iconName": "Html5",
+			"icon": <Html5 />
+		},
+		"Amazons3": {
+			"iconName": "Amazons3",
+			"icon": <Amazons3 />
+		},
+		"Typescript": {
+			"iconName": "Typescript",
+			"icon": <Typescript />
+		},
+		"Sass": {
+			"iconName": "Sass",
+			"icon": <Sass />
+		},
+		"Expo": {
+			"iconName": "Expo",
+			"icon": <Expo />
+		},
+		"Jest": {
+			"iconName": "Jest",
+			"icon": <Jest />
+		},
+		"Leaflet": {
+			"iconName": "Leaflet",
+			"icon": <Leaflet />
+		},
+		"Express": {
+			"iconName": "Express",
+			"icon": <Express />
+		},
+		"Flutter": {
+			"iconName": "Flutter",
+			"icon": <Flutter />
+		},
+		"Filter": {
+			"iconName": "Filter",
+			"icon": <Filter />
+		},
+		"Live": {
+			"iconName": "Live",
+			"icon": <Live />
+		},
+	}
+
 	function handleFilter(id) {
 		setStack(id);
 	}
@@ -361,14 +472,27 @@ export default function Portifolio() {
 								</div>
 
 								<WrapperTechStack>
+									<div>
+										{project.topics ? (project.topics.map((topic, index) => (
+											topicsIcons[topic] ? (
+												<div key={index}>
+													<Tooltip toolTipText={topicsIcons[topic].iconName}>
 
-									{project.topics ? (project.topics.map((topic, index) => (
+														{topicsIcons[topic].icon}
+													</Tooltip>
+												</div>
+											) : (
+												<div key={index}>
+													<Tooltip toolTipText={topic}>
+														{topicsIcons["Robot"].icon}
+													</Tooltip>
+												</div>
+											)
 
-										<span className="created_at">{topic}</span>
-									))) : (
-										""
-									)}
-
+										))) : (
+											""
+										)}
+									</div>
 									<WrapperButtons>
 										{project.homepage != null && project.homepage != "" && (
 											<a href={project.homepage} target="_blank" rel="noreferrer">
