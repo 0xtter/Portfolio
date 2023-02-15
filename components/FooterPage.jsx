@@ -244,7 +244,7 @@ export default function FooterPage(props) {
 		}
 	}
 
-	
+
 	const goToTop = () => {
 		window.scrollTo({
 			top: 0,
@@ -280,8 +280,8 @@ export default function FooterPage(props) {
 					<SectionFooterMenu>
 						<FooterTextTitle>{language.footer.labelHost.title}</FooterTextTitle>
 
-						<FooterTextExternalLink href="https://vercel.com/" target="_blank">
-							Vercel
+						<FooterTextExternalLink href="https://github.com/awesome-selfhosted/awesome-selfhosted" target="_blank">
+							Self-Hosting
 						</FooterTextExternalLink>
 					</SectionFooterMenu>
 				</ScrollAnimation>
@@ -289,7 +289,7 @@ export default function FooterPage(props) {
 				<ScrollAnimation animateIn="fadeIn" animateOnce delay={400}>
 					<SectionFooterMenu>
 						<FooterTextTitle>{language.footer.labelSourceCode.title}</FooterTextTitle>
-						<FooterTextExternalLink href="https://github.com/Glaysonvisgueira/glaysonvisgueira_next-js" target="_blank">
+						<FooterTextExternalLink href="https://github.com/0xtter/Portfolio" target="_blank">
 							Github
 						</FooterTextExternalLink>
 					</SectionFooterMenu>
