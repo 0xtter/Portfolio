@@ -39,6 +39,7 @@ import { Filter } from "@styled-icons/fa-solid/Filter";
 //Custom components
 import Tooltip from "@/components/Tooltip";
 import FetchData from "@/components/RepositoryList";
+import { D } from "styled-icons/crypto";
 
 const ContainerGrid = styled.div`
 	display: grid;
@@ -246,310 +247,12 @@ const SectionPortifolio = styled.section`
 
 export default function Portifolio() {
 	const { language } = useContext(SettingsContext);
-	const [stack, setStack] = useState("TODOS");
 	const [view, setView] = useState("grid");
+	const [stack, setStack] = useState("TODOS");
 
 	// Fetch data from my personnal GitHub account to list repositories
-	const [url, setUrl] = useState('https://api.github.com/users/0xtter/repos');
-
+	const [url, setURL] = useState('https://api.github.com/users/0xtter/repos');
 	const data = FetchData(url);
-
-	var idCount = 0;
-
-	// var gitProjects = data.map(project => ({
-	// 	id: idCount++,
-	// 	title: data.name
-	// }))	// console.log(gitProjects)
-
-	const projects = [
-		{
-			id: idCount++,
-			title: language.portifolioPage.projects.id_1.title,
-			description: language.portifolioPage.projects.id_1.description,
-			techs: [
-				<Tooltip toolTipText="Java">
-					<Java />
-				</Tooltip>,
-				<Tooltip toolTipText="SEO">
-					<Robot />
-				</Tooltip>,
-			],
-			sourceCodeLink: "https://github.com/Glaysonvisgueira/jfuzzylogic_irrigador",
-			typeProject: ["BACKEND"],
-			created_at: "09/06/2019",
-		},
-		{
-			id: idCount++,
-			title: language.portifolioPage.projects.id_2.title,
-			description: language.portifolioPage.projects.id_2.description,
-			techs: [
-				<Tooltip toolTipText="ReactJS">
-					<ReactLogo />
-				</Tooltip>,
-				<Tooltip toolTipText="Expo">
-					<Expo />
-				</Tooltip>,
-				<Tooltip toolTipText="Javascript">
-					<Javascript />
-				</Tooltip>,
-				<Tooltip toolTipText="NodeJS">
-					<Nodejs />
-				</Tooltip>,
-				<Tooltip toolTipText="CSS">
-					<Css3 />
-				</Tooltip>,
-				<Tooltip toolTipText="MongoDB">
-					<Mongodb />
-				</Tooltip>,
-			],
-			sourceCodeLink: "https://github.com/Glaysonvisgueira/DevRadar",
-			typeProject: ["BACKEND", "WEB", "MOBILE"],
-			created_at: "02/02/2020",
-		},
-		{
-			id: idCount++,
-			title: language.portifolioPage.projects.id_3.title,
-			description: language.portifolioPage.projects.id_3.description,
-			techs: [
-				<Tooltip toolTipText="ReactJS">
-					<ReactLogo />
-				</Tooltip>,
-				<Tooltip toolTipText="Expo">
-					<Expo />
-				</Tooltip>,
-				<Tooltip toolTipText="Javascript">
-					<Javascript />
-				</Tooltip>,
-				<Tooltip toolTipText="NodeJS">
-					<Nodejs />
-				</Tooltip>,
-				<Tooltip toolTipText="CSS">
-					<Css3 />
-				</Tooltip>,
-				<Tooltip toolTipText="MongoDB">
-					<Mongodb />
-				</Tooltip>,
-				<Tooltip toolTipText="Jest">
-					<Jest />
-				</Tooltip>,
-				<Tooltip toolTipText="SqLite">
-					<Sqlite />
-				</Tooltip>,
-			],
-			sourceCodeLink: "https://github.com/Glaysonvisgueira/be-the-hero",
-			typeProject: ["BACKEND", "WEB", "MOBILE"],
-			created_at: "26/04/2020",
-		},
-		{
-			id: idCount++,
-			title: language.portifolioPage.projects.id_4.title,
-			description: language.portifolioPage.projects.id_4.description,
-			techs: [
-				<Tooltip toolTipText="NodeJS">
-					<Nodejs />
-				</Tooltip>,
-				<Tooltip toolTipText="Javascript">
-					<Javascript />
-				</Tooltip>,
-			],
-			sourceCodeLink: "https://github.com/Glaysonvisgueira/inthegra-nodejs",
-			typeProject: ["BACKEND"],
-			created_at: "04/04/2020",
-		},
-		{
-			id: idCount++,
-			title: language.portifolioPage.projects.id_5.title,
-			description: language.portifolioPage.projects.id_5.description,
-			techs: [
-				<Tooltip toolTipText="ReactJs">
-					<ReactLogo />
-				</Tooltip>,
-				<Tooltip toolTipText="Javascript">
-					<Javascript />
-				</Tooltip>,
-				<Tooltip toolTipText="Google Cloud">
-					<GoogleCloud />
-				</Tooltip>,
-				<Tooltip toolTipText="Sass">
-					<Sass />
-				</Tooltip>,
-				<Tooltip toolTipText="Firebase">
-					<Firebase />
-				</Tooltip>,
-			],
-			sourceCodeLink: "https://github.com/Glaysonvisgueira/letmeask-NLW06",
-			typeProject: ["WEB", "MOBILE"],
-			created_at: "24/06/2021",
-		},
-		{
-			id: idCount++,
-			title: language.portifolioPage.projects.id_6.title,
-			description: language.portifolioPage.projects.id_6.description,
-			techs: [
-				<Tooltip toolTipText="ReactJS">
-					<ReactLogo />
-				</Tooltip>,
-				<Tooltip toolTipText="Typescript">
-					<Typescript />
-				</Tooltip>,
-				<Tooltip toolTipText="SqLite">
-					<Sqlite />
-				</Tooltip>,
-			],
-			sourceCodeLink: "https://github.com/Glaysonvisgueira/plantmanager",
-			typeProject: ["MOBILE"],
-			created_at: "19/04/2021",
-		},
-		{
-			id: idCount++,
-			title: language.portifolioPage.projects.id_7.title,
-			description: language.portifolioPage.projects.id_7.description,
-			techs: [
-				<Tooltip toolTipText="NodeJS">
-					<Nodejs />
-				</Tooltip>,
-				<Tooltip toolTipText="Typescript">
-					<Typescript />
-				</Tooltip>,
-				<Tooltip toolTipText="SqLite">
-					<Sqlite />
-				</Tooltip>,
-				<Tooltip toolTipText="Jest">
-					<Jest />
-				</Tooltip>,
-			],
-			sourceCodeLink: "https://github.com/Glaysonvisgueira/next-level-week-04-nodejs",
-			typeProject: ["BACKEND"],
-			created_at: "23/02/2021",
-		},
-		{
-			id: idCount++,
-			title: language.portifolioPage.projects.id_8.title,
-			description: language.portifolioPage.projects.id_8.description,
-			techs: [
-				<Tooltip toolTipText="NodeJS">
-					<Nodejs />
-				</Tooltip>,
-				<Tooltip toolTipText="Javascript">
-					<Javascript />
-				</Tooltip>,
-				<Tooltip toolTipText="MongoDB">
-					<Mongodb />
-				</Tooltip>,
-				<Tooltip toolTipText="AWS">
-					<Amazonaws />
-				</Tooltip>,
-			],
-			sourceCodeLink: "https://github.com/Glaysonvisgueira/api-fasttrack",
-			typeProject: ["BACKEND"],
-			created_at: "27/11/2020",
-		},
-		{
-			id: idCount++,
-			title: language.portifolioPage.projects.id_9.title,
-			description: language.portifolioPage.projects.id_9.description,
-			techs: [
-				<Tooltip toolTipText="ReactJS">
-					<ReactLogo />
-				</Tooltip>,
-				<Tooltip toolTipText="Expo">
-					<Expo />
-				</Tooltip>,
-				<Tooltip toolTipText="Javascript">
-					<Javascript />
-				</Tooltip>,
-			],
-			sourceCodeLink: "https://github.com/Glaysonvisgueira/inthegre-se",
-			typeProject: ["MOBILE", "BACKEND"],
-			created_at: "05/05/2020",
-		},
-		{
-			id: idCount++,
-			title: language.portifolioPage.projects.id_10.title,
-			description: language.portifolioPage.projects.id_10.description,
-			techs: [
-				<Tooltip toolTipText="Python">
-					<Python />
-				</Tooltip>,
-			],
-			sourceCodeLink: "https://github.com/Glaysonvisgueira/crawlerRadaresVelocidade",
-			typeProject: ["BACKEND"],
-			created_at: "16/06/2019",
-		},
-		{
-			id: idCount++,
-			title: language.portifolioPage.projects.id_11.title,
-			description: language.portifolioPage.projects.id_11.description,
-			techs: [
-				<Tooltip toolTipText="ReactJS">
-					<ReactLogo />
-				</Tooltip>,
-				<Tooltip toolTipText="NextJS">
-					<Nextdotjs />
-				</Tooltip>,
-				<Tooltip toolTipText="Styled Components">
-					<Styledcomponents />
-				</Tooltip>,
-				<Tooltip toolTipText="Vercel">
-					<LogoVercel />
-				</Tooltip>,
-			],
-			sourceCodeLink: "https://github.com/Glaysonvisgueira/glaysonvisgueira_next-js",
-			typeProject: ["WEB"],
-			created_at: "10/06/2022",
-		},
-		{
-			id: idCount++,
-			title: language.portifolioPage.projects.id_12.title,
-			description: language.portifolioPage.projects.id_12.description,
-			techs: [
-				<Tooltip toolTipText="ReactJS">
-					<ReactLogo />
-				</Tooltip>,
-				<Tooltip toolTipText="Leaflet">
-					<Leaflet />
-				</Tooltip>,
-			],
-			sourceCodeLink: "https://github.com/Glaysonvisgueira/dashboard-control-mobile-implantacao",
-			typeProject: ["WEB", "BACKEND"],
-			created_at: "29/06/2021",
-		},
-		{
-			id: idCount++,
-			title: language.portifolioPage.projects.id_13.title,
-			description: language.portifolioPage.projects.id_13.description,
-			techs: [
-				<Tooltip toolTipText="NodeJS">
-					<Nodejs />
-				</Tooltip>,
-				<Tooltip toolTipText="AWS">
-					<Amazonaws />
-				</Tooltip>,
-				<Tooltip toolTipText="Express">
-					<Express />
-				</Tooltip>,
-				<Tooltip toolTipText="MongoDB">
-					<Mongodb />
-				</Tooltip>,
-			],
-			sourceCodeLink: "https://github.com/Glaysonvisgueira/controlmobile-dashboard-api",
-			typeProject: ["BACKEND"],
-			created_at: "02/07/2021",
-		},
-		{
-			id: idCount++,
-			title: language.portifolioPage.projects.id_14.title,
-			description: language.portifolioPage.projects.id_14.description,
-			techs: [
-				<Tooltip toolTipText="Flutter">
-					<Flutter />
-				</Tooltip>,
-			],
-			sourceCodeLink: "https://github.com/Glaysonvisgueira/controlmobile-dashboard-api",
-			typeProject: ["MOBILE"],
-			created_at: "13/08/2022",
-		},
-	];
 
 	function handleFilter(id) {
 		setStack(id);
@@ -559,15 +262,12 @@ export default function Portifolio() {
 		setView(event.target.id);
 	}
 
-	const array_projects = stack == "TODOS" ? projects : projects.filter((item) => item.typeProject.includes(stack));
+	const array_projects = stack == "TODOS";
 
 	return (
 		<SectionPortifolio id="section-portifolio">
-			<ContainerTitleSection>
-				<TitleSection>{language.portifolioPage.title}</TitleSection>
-			</ContainerTitleSection>
 
-			<ChipTechOptions>
+			{/* <ChipTechOptions>
 				<Filter className="svg" />
 				<Chip
 					id="TODOS"
@@ -602,43 +302,386 @@ export default function Portifolio() {
 					active={stack.includes("MOBILE") ? true : false}>
 					MOBILE
 				</Chip>
-			</ChipTechOptions>
+			</ChipTechOptions> */}
 
+			<ContainerTitleSection>
+				<TitleSection>{language.portifolioPage.title}</TitleSection>
+			</ContainerTitleSection>
 			<ContainerGrid view={view}>
-				{array_projects.map((project, index) => (
-					<ScrollAnimation animateIn="fadeIn" animateOnce key={index}>
-						<WrapperProjectCard>
-							<WrapperTextChip>
-								{project.typeProject.map((chip, idx) => (
-									<div key={idx}>
-										<span>{chip}</span>
+				{data ? (
+					data.map((project, index) => (
+						<ScrollAnimation animateIn="fadeIn" animateOnce key={index}>
+							<WrapperProjectCard>
+								<WrapperTextChip>
+
+									<div key={index}>
+										<span>{project.language}</span>
 									</div>
-								))}
-							</WrapperTextChip>
 
-							<TitleSpan>{project.title}</TitleSpan>
+								</WrapperTextChip>
+								<TitleSpan>{project.name}</TitleSpan>
 
-							<div className="title-body">
-								<BodyText>{project.description}</BodyText>
-							</div>
-							<WrapperTechStack>
-								<div>
-									{project.techs.map((icone, i) => (
-										<div key={i}>{icone}</div>
-									))}
+								<div className="title-body">
+									<BodyText>{project.description}</BodyText>
 								</div>
-								<a href={project.sourceCodeLink} target="_blank" rel="noreferrer">
-									<GithubOutline />
-								</a>
-							</WrapperTechStack>
+								<WrapperTechStack>
+								</WrapperTechStack>
 
-							<span className="created_at">
-								{language.portifolioPage.createdLabel}: {project.created_at}
-							</span>
-						</WrapperProjectCard>
-					</ScrollAnimation>
-				))}
+							</WrapperProjectCard>
+						</ScrollAnimation>
+					))) : (
+					<p>Loading...</p>
+				)}
 			</ContainerGrid>
 		</SectionPortifolio>
 	);
+
+	// return (
+	// 	<SectionPortifolio id="section-portifolio">
+	// 		<ContainerTitleSection>
+	// 			<TitleSection>{language.portifolioPage.title}</TitleSection>
+	// 		</ContainerTitleSection>
+
+	// 		<ContainerGrid view={view}>
+	// 			{data.map((project, index) => (
+	// 				<ScrollAnimation animateIn="fadeIn" animateOnce key={index}>
+	// 					<WrapperProjectCard>
+	// 						<WrapperTextChip>
+	// 							{project.typeProject.map((chip, idx) => (
+	// 								<div key={idx}>
+	// 									<span>{chip}</span>
+	// 								</div>
+	// 							))}
+	// 						</WrapperTextChip>
+
+	// 						<TitleSpan>{project.title}</TitleSpan>
+
+	// 						<div className="title-body">
+	// 							<BodyText>{project.description}</BodyText>
+	// 						</div>
+	// 						<WrapperTechStack>
+	// 							<div>
+	// 								{project.techs.map((icone, i) => (
+	// 									<div key={i}>{icone}</div>
+	// 								))}
+	// 							</div>
+	// 							<a href={project.sourceCodeLink} target="_blank" rel="noreferrer">
+	// 								<GithubOutline />
+	// 							</a>
+	// 						</WrapperTechStack>
+
+	// 						<span className="created_at">
+	// 							{language.portifolioPage.createdLabel}: {project.created_at}
+	// 						</span>
+	// 					</WrapperProjectCard>
+	// 				</ScrollAnimation>
+	// 			))}
+	// 		</ContainerGrid>
+	// 	</SectionPortifolio>
+	// );
+
+	// var gitProjects = data.map(project => ({
+	// 	id: idCount++,
+	// 	title: data.name
+	// }))	// console.log(gitProjects)
+
+	// const projects = [
+	// 	{
+	// 		id: idCount++,
+	// 		title: language.portifolioPage.projects.id_1.title,
+	// 		description: language.portifolioPage.projects.id_1.description,
+	// 		techs: [
+	// 			<Tooltip toolTipText="Java">
+	// 				<Java />
+	// 			</Tooltip>,
+	// 			<Tooltip toolTipText="SEO">
+	// 				<Robot />
+	// 			</Tooltip>,
+	// 		],
+	// 		sourceCodeLink: "https://github.com/Glaysonvisgueira/jfuzzylogic_irrigador",
+	// 		typeProject: ["BACKEND"],
+	// 		created_at: "09/06/2019",
+	// 	},
+	// 	{
+	// 		id: idCount++,
+	// 		title: language.portifolioPage.projects.id_2.title,
+	// 		description: language.portifolioPage.projects.id_2.description,
+	// 		techs: [
+	// 			<Tooltip toolTipText="ReactJS">
+	// 				<ReactLogo />
+	// 			</Tooltip>,
+	// 			<Tooltip toolTipText="Expo">
+	// 				<Expo />
+	// 			</Tooltip>,
+	// 			<Tooltip toolTipText="Javascript">
+	// 				<Javascript />
+	// 			</Tooltip>,
+	// 			<Tooltip toolTipText="NodeJS">
+	// 				<Nodejs />
+	// 			</Tooltip>,
+	// 			<Tooltip toolTipText="CSS">
+	// 				<Css3 />
+	// 			</Tooltip>,
+	// 			<Tooltip toolTipText="MongoDB">
+	// 				<Mongodb />
+	// 			</Tooltip>,
+	// 		],
+	// 		sourceCodeLink: "https://github.com/Glaysonvisgueira/DevRadar",
+	// 		typeProject: ["BACKEND", "WEB", "MOBILE"],
+	// 		created_at: "02/02/2020",
+	// 	},
+	// 	{
+	// 		id: idCount++,
+	// 		title: language.portifolioPage.projects.id_3.title,
+	// 		description: language.portifolioPage.projects.id_3.description,
+	// 		techs: [
+	// 			<Tooltip toolTipText="ReactJS">
+	// 				<ReactLogo />
+	// 			</Tooltip>,
+	// 			<Tooltip toolTipText="Expo">
+	// 				<Expo />
+	// 			</Tooltip>,
+	// 			<Tooltip toolTipText="Javascript">
+	// 				<Javascript />
+	// 			</Tooltip>,
+	// 			<Tooltip toolTipText="NodeJS">
+	// 				<Nodejs />
+	// 			</Tooltip>,
+	// 			<Tooltip toolTipText="CSS">
+	// 				<Css3 />
+	// 			</Tooltip>,
+	// 			<Tooltip toolTipText="MongoDB">
+	// 				<Mongodb />
+	// 			</Tooltip>,
+	// 			<Tooltip toolTipText="Jest">
+	// 				<Jest />
+	// 			</Tooltip>,
+	// 			<Tooltip toolTipText="SqLite">
+	// 				<Sqlite />
+	// 			</Tooltip>,
+	// 		],
+	// 		sourceCodeLink: "https://github.com/Glaysonvisgueira/be-the-hero",
+	// 		typeProject: ["BACKEND", "WEB", "MOBILE"],
+	// 		created_at: "26/04/2020",
+	// 	},
+	// 	{
+	// 		id: idCount++,
+	// 		title: language.portifolioPage.projects.id_4.title,
+	// 		description: language.portifolioPage.projects.id_4.description,
+	// 		techs: [
+	// 			<Tooltip toolTipText="NodeJS">
+	// 				<Nodejs />
+	// 			</Tooltip>,
+	// 			<Tooltip toolTipText="Javascript">
+	// 				<Javascript />
+	// 			</Tooltip>,
+	// 		],
+	// 		sourceCodeLink: "https://github.com/Glaysonvisgueira/inthegra-nodejs",
+	// 		typeProject: ["BACKEND"],
+	// 		created_at: "04/04/2020",
+	// 	},
+	// 	{
+	// 		id: idCount++,
+	// 		title: language.portifolioPage.projects.id_5.title,
+	// 		description: language.portifolioPage.projects.id_5.description,
+	// 		techs: [
+	// 			<Tooltip toolTipText="ReactJs">
+	// 				<ReactLogo />
+	// 			</Tooltip>,
+	// 			<Tooltip toolTipText="Javascript">
+	// 				<Javascript />
+	// 			</Tooltip>,
+	// 			<Tooltip toolTipText="Google Cloud">
+	// 				<GoogleCloud />
+	// 			</Tooltip>,
+	// 			<Tooltip toolTipText="Sass">
+	// 				<Sass />
+	// 			</Tooltip>,
+	// 			<Tooltip toolTipText="Firebase">
+	// 				<Firebase />
+	// 			</Tooltip>,
+	// 		],
+	// 		sourceCodeLink: "https://github.com/Glaysonvisgueira/letmeask-NLW06",
+	// 		typeProject: ["WEB", "MOBILE"],
+	// 		created_at: "24/06/2021",
+	// 	},
+	// 	{
+	// 		id: idCount++,
+	// 		title: language.portifolioPage.projects.id_6.title,
+	// 		description: language.portifolioPage.projects.id_6.description,
+	// 		techs: [
+	// 			<Tooltip toolTipText="ReactJS">
+	// 				<ReactLogo />
+	// 			</Tooltip>,
+	// 			<Tooltip toolTipText="Typescript">
+	// 				<Typescript />
+	// 			</Tooltip>,
+	// 			<Tooltip toolTipText="SqLite">
+	// 				<Sqlite />
+	// 			</Tooltip>,
+	// 		],
+	// 		sourceCodeLink: "https://github.com/Glaysonvisgueira/plantmanager",
+	// 		typeProject: ["MOBILE"],
+	// 		created_at: "19/04/2021",
+	// 	},
+	// 	{
+	// 		id: idCount++,
+	// 		title: language.portifolioPage.projects.id_7.title,
+	// 		description: language.portifolioPage.projects.id_7.description,
+	// 		techs: [
+	// 			<Tooltip toolTipText="NodeJS">
+	// 				<Nodejs />
+	// 			</Tooltip>,
+	// 			<Tooltip toolTipText="Typescript">
+	// 				<Typescript />
+	// 			</Tooltip>,
+	// 			<Tooltip toolTipText="SqLite">
+	// 				<Sqlite />
+	// 			</Tooltip>,
+	// 			<Tooltip toolTipText="Jest">
+	// 				<Jest />
+	// 			</Tooltip>,
+	// 		],
+	// 		sourceCodeLink: "https://github.com/Glaysonvisgueira/next-level-week-04-nodejs",
+	// 		typeProject: ["BACKEND"],
+	// 		created_at: "23/02/2021",
+	// 	},
+	// 	{
+	// 		id: idCount++,
+	// 		title: language.portifolioPage.projects.id_8.title,
+	// 		description: language.portifolioPage.projects.id_8.description,
+	// 		techs: [
+	// 			<Tooltip toolTipText="NodeJS">
+	// 				<Nodejs />
+	// 			</Tooltip>,
+	// 			<Tooltip toolTipText="Javascript">
+	// 				<Javascript />
+	// 			</Tooltip>,
+	// 			<Tooltip toolTipText="MongoDB">
+	// 				<Mongodb />
+	// 			</Tooltip>,
+	// 			<Tooltip toolTipText="AWS">
+	// 				<Amazonaws />
+	// 			</Tooltip>,
+	// 		],
+	// 		sourceCodeLink: "https://github.com/Glaysonvisgueira/api-fasttrack",
+	// 		typeProject: ["BACKEND"],
+	// 		created_at: "27/11/2020",
+	// 	},
+	// 	{
+	// 		id: idCount++,
+	// 		title: language.portifolioPage.projects.id_9.title,
+	// 		description: language.portifolioPage.projects.id_9.description,
+	// 		techs: [
+	// 			<Tooltip toolTipText="ReactJS">
+	// 				<ReactLogo />
+	// 			</Tooltip>,
+	// 			<Tooltip toolTipText="Expo">
+	// 				<Expo />
+	// 			</Tooltip>,
+	// 			<Tooltip toolTipText="Javascript">
+	// 				<Javascript />
+	// 			</Tooltip>,
+	// 		],
+	// 		sourceCodeLink: "https://github.com/Glaysonvisgueira/inthegre-se",
+	// 		typeProject: ["MOBILE", "BACKEND"],
+	// 		created_at: "05/05/2020",
+	// 	},
+	// 	{
+	// 		id: idCount++,
+	// 		title: language.portifolioPage.projects.id_10.title,
+	// 		description: language.portifolioPage.projects.id_10.description,
+	// 		techs: [
+	// 			<Tooltip toolTipText="Python">
+	// 				<Python />
+	// 			</Tooltip>,
+	// 		],
+	// 		sourceCodeLink: "https://github.com/Glaysonvisgueira/crawlerRadaresVelocidade",
+	// 		typeProject: ["BACKEND"],
+	// 		created_at: "16/06/2019",
+	// 	},
+	// 	{
+	// 		id: idCount++,
+	// 		title: language.portifolioPage.projects.id_11.title,
+	// 		description: language.portifolioPage.projects.id_11.description,
+	// 		techs: [
+	// 			<Tooltip toolTipText="ReactJS">
+	// 				<ReactLogo />
+	// 			</Tooltip>,
+	// 			<Tooltip toolTipText="NextJS">
+	// 				<Nextdotjs />
+	// 			</Tooltip>,
+	// 			<Tooltip toolTipText="Styled Components">
+	// 				<Styledcomponents />
+	// 			</Tooltip>,
+	// 			<Tooltip toolTipText="Vercel">
+	// 				<LogoVercel />
+	// 			</Tooltip>,
+	// 		],
+	// 		sourceCodeLink: "https://github.com/Glaysonvisgueira/glaysonvisgueira_next-js",
+	// 		typeProject: ["WEB"],
+	// 		created_at: "10/06/2022",
+	// 	},
+	// 	{
+	// 		id: idCount++,
+	// 		title: language.portifolioPage.projects.id_12.title,
+	// 		description: language.portifolioPage.projects.id_12.description,
+	// 		techs: [
+	// 			<Tooltip toolTipText="ReactJS">
+	// 				<ReactLogo />
+	// 			</Tooltip>,
+	// 			<Tooltip toolTipText="Leaflet">
+	// 				<Leaflet />
+	// 			</Tooltip>,
+	// 		],
+	// 		sourceCodeLink: "https://github.com/Glaysonvisgueira/dashboard-control-mobile-implantacao",
+	// 		typeProject: ["WEB", "BACKEND"],
+	// 		created_at: "29/06/2021",
+	// 	},
+	// 	{
+	// 		id: idCount++,
+	// 		title: language.portifolioPage.projects.id_13.title,
+	// 		description: language.portifolioPage.projects.id_13.description,
+	// 		techs: [
+	// 			<Tooltip toolTipText="NodeJS">
+	// 				<Nodejs />
+	// 			</Tooltip>,
+	// 			<Tooltip toolTipText="AWS">
+	// 				<Amazonaws />
+	// 			</Tooltip>,
+	// 			<Tooltip toolTipText="Express">
+	// 				<Express />
+	// 			</Tooltip>,
+	// 			<Tooltip toolTipText="MongoDB">
+	// 				<Mongodb />
+	// 			</Tooltip>,
+	// 		],
+	// 		sourceCodeLink: "https://github.com/Glaysonvisgueira/controlmobile-dashboard-api",
+	// 		typeProject: ["BACKEND"],
+	// 		created_at: "02/07/2021",
+	// 	},
+	// 	{
+	// 		id: idCount++,
+	// 		title: language.portifolioPage.projects.id_14.title,
+	// 		description: language.portifolioPage.projects.id_14.description,
+	// 		techs: [
+	// 			<Tooltip toolTipText="Flutter">
+	// 				<Flutter />
+	// 			</Tooltip>,
+	// 		],
+	// 		sourceCodeLink: "https://github.com/Glaysonvisgueira/controlmobile-dashboard-api",
+	// 		typeProject: ["MOBILE"],
+	// 		created_at: "13/08/2022",
+	// 	},
+	// ];
+
+	// function handleFilter(id) {
+	// 	setStack(id);
+	// }
+
+	// function handleView(event) {
+	// 	setView(event.target.id);
+	// }
+
+	// // const array_projects = stack == "TODOS" ? projects : projects.filter((item) => item.typeProject.includes(stack));
 }
