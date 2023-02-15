@@ -95,7 +95,7 @@ export default function LanguageSwitchButton() {
 					<span className="slider round"></span>
 				</label>
 			</SwitchButton>
-			<Image src="/img/enus.png" alt="Bandeira dos Estados unidos da América" width={28} height={28} objectFit="cover" />
+			<Image src="/img/enuk.png" alt="Bandeira dos Estados unidos da América" width={28} height={28} objectFit="cover" />
 		</LanguageWrapper>
 	);
 }

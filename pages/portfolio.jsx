@@ -12,9 +12,6 @@ import { TitleSection, ContainerTitleSection, TitleH3, BodyText } from "@/styles
 import { Robot } from "@styled-icons/fa-solid/Robot";
 import { GithubOutline } from "@styled-icons/evaicons-outline/GithubOutline";
 import { Java } from "@styled-icons/fa-brands/Java";
-import { Amazonaws } from "@styled-icons/simple-icons/Amazonaws";
-import { GoogleCloud } from "@styled-icons/boxicons-logos/GoogleCloud";
-import { Firebase } from "@styled-icons/boxicons-logos/Firebase";
 import { Mongodb } from "@styled-icons/simple-icons/Mongodb";
 import { Sqlite } from "@styled-icons/simple-icons/Sqlite";
 import { Javascript } from "@styled-icons/boxicons-logos/Javascript";
@@ -22,20 +19,26 @@ import { ReactLogo } from "@styled-icons/boxicons-logos/ReactLogo";
 import { Nextdotjs } from "@styled-icons/simple-icons/Nextdotjs";
 import { Python } from "@styled-icons/boxicons-logos/Python";
 import { Nodejs } from "@styled-icons/boxicons-logos/Nodejs";
-import { LogoVercel } from "@styled-icons/ionicons-solid/LogoVercel";
-import { Styledcomponents } from "@styled-icons/simple-icons/Styledcomponents";
 import { Css3 } from "@styled-icons/boxicons-logos/Css3";
 import { Html5 } from "@styled-icons/boxicons-logos/Html5";
-import { Amazons3 } from "@styled-icons/simple-icons/Amazons3";
-import { Typescript } from "@styled-icons/simple-icons/Typescript";
-import { Sass } from "@styled-icons/fa-brands/Sass";
-import { Expo } from "@styled-icons/simple-icons/Expo";
-import { Jest } from "@styled-icons/simple-icons/Jest";
-import { Leaflet } from "@styled-icons/simple-icons/Leaflet";
-import { Express } from "@styled-icons/simple-icons/Express";
-import { Flutter } from "@styled-icons/boxicons-logos/Flutter";
-import { Filter } from "@styled-icons/fa-solid/Filter";
 import { Live } from "@styled-icons/fluentui-system-filled/Live";
+import { CPlusPlus } from "@styled-icons/boxicons-logos";
+import { FileBinary } from "@styled-icons/bootstrap";
+import { Vuejs } from "@styled-icons/boxicons-logos";
+import { Markdown } from "@styled-icons/boxicons-logos";
+import { BookmarkFill } from "@styled-icons/bootstrap";
+import { Github } from "@styled-icons/boxicons-logos";
+import { MathFormatLinear } from "@styled-icons/fluentui-system-filled";
+import { DrawShape } from "@styled-icons/fluentui-system-filled";
+import { Gamepad } from "styled-icons/fa-solid";
+import { Password } from "@styled-icons/fluentui-system-filled/Password";
+import { ShieldLockFill } from "@styled-icons/bootstrap";
+import { TrophyFill } from "@styled-icons/bootstrap";
+import { C } from "@styled-icons/simple-icons";
+import { Box } from "@styled-icons/bootstrap";
+import { DesignIdeas } from "@styled-icons/fluentui-system-filled";
+import { JournalBookmark } from "@styled-icons/bootstrap";
+import { Arduino } from "@styled-icons/simple-icons";
 
 //Custom components
 import Tooltip from "@/components/Tooltip";
@@ -294,27 +297,11 @@ export default function Portifolio() {
 			"iconName": "Robot",
 			"icon": <Robot />
 		},
-		"GithubOutline": {
-			"iconName": "GithubOutline",
-			"icon": <GithubOutline />
-		},
-		"Java": {
+		"java": {
 			"iconName": "Java",
 			"icon": <Java />
 		},
-		"Amazonaws": {
-			"iconName": "Amazonaws",
-			"icon": <Amazonaws />
-		},
-		"GoogleCloud": {
-			"iconName": "GoogleCloud",
-			"icon": <GoogleCloud />
-		},
-		"Firebase": {
-			"iconName": "Firebase",
-			"icon": <Firebase />
-		},
-		"Mongodb": {
+		"mongodb": {
 			"iconName": "Mongodb",
 			"icon": <Mongodb />
 		},
@@ -322,82 +309,110 @@ export default function Portifolio() {
 			"iconName": "Sqlite",
 			"icon": <Sqlite />
 		},
-		"Javascript": {
+		"javascript": {
 			"iconName": "Javascript",
 			"icon": <Javascript />
 		},
-		"ReactLogo": {
-			"iconName": "reactjs",
+		"reactjs": {
+			"iconName": "Reactjs",
 			"icon": <ReactLogo />
 		},
 		"Nextdotjs": {
 			"iconName": "Nextdotjs",
 			"icon": <Nextdotjs />
 		},
-		"Python": {
+		"python3": {
 			"iconName": "Python",
 			"icon": <Python />
 		},
-		"Nodejs": {
+		"nodejs": {
 			"iconName": "Nodejs",
 			"icon": <Nodejs />
 		},
-		"LogoVercel": {
-			"iconName": "LogoVercel",
-			"icon": <LogoVercel />
-		},
-		"Styledcomponents": {
-			"iconName": "Styledcomponents",
-			"icon": <Styledcomponents />
-		},
-		"Css3": {
-			"iconName": "Css3",
+		"css": {
+			"iconName": "CSS",
 			"icon": <Css3 />
 		},
 		"html5": {
-			"iconName": "Html5",
+			"iconName": "HTML5",
 			"icon": <Html5 />
-		},
-		"Amazons3": {
-			"iconName": "Amazons3",
-			"icon": <Amazons3 />
-		},
-		"Typescript": {
-			"iconName": "Typescript",
-			"icon": <Typescript />
-		},
-		"Sass": {
-			"iconName": "Sass",
-			"icon": <Sass />
-		},
-		"Expo": {
-			"iconName": "Expo",
-			"icon": <Expo />
-		},
-		"Jest": {
-			"iconName": "Jest",
-			"icon": <Jest />
-		},
-		"Leaflet": {
-			"iconName": "Leaflet",
-			"icon": <Leaflet />
-		},
-		"Express": {
-			"iconName": "Express",
-			"icon": <Express />
-		},
-		"Flutter": {
-			"iconName": "Flutter",
-			"icon": <Flutter />
-		},
-		"Filter": {
-			"iconName": "Filter",
-			"icon": <Filter />
 		},
 		"Live": {
 			"iconName": "Live",
 			"icon": <Live />
 		},
+		"cpp": {
+			"iconName": "C++",
+			"icon": <CPlusPlus />
+		},
+		"c": {
+			"iconName": "C",
+			"icon": <C />
+		},
+		"reverse-engineering": {
+			"iconName": "Reverse Engineering",
+			"icon": <FileBinary />
+		},
+		"vuejs": {
+			"iconName": "Vuejs",
+			"icon": <Vuejs />
+		},
+		"markdown": {
+			"iconName": "Markdown",
+			"icon": <Markdown />
+		},
+		"Default": {
+			"iconName": "BookmarkFill",
+			"icon": <JournalBookmark />
+		},
+		"github": {
+			"iconName": "Github",
+			"icon": <Github />
+		},
+		"github-profile": {
+			"iconName": "Github Profile",
+			"icon": <Github />
+		},
+		"desmos-api": {
+			"iconName": "Desmos API",
+			"icon": <MathFormatLinear />
+		},
+		"drawing-app": {
+			"iconName": "Drawing App",
+			"icon": <DrawShape />
+		},
+		"pillow": {
+			"iconName": "Pillow",
+			"icon": <DrawShape />
+		},
+		"game": {
+			"iconName": "Game",
+			"icon": <Gamepad />
+		},
+		"pentesting": {
+			"iconName": "Pentesting",
+			"icon": <Password />
+		},
+		"security": {
+			"iconName": "Security",
+			"icon": <ShieldLockFill />
+		},
+		"challenge": {
+			"iconName": "Challenge",
+			"icon": <TrophyFill />
+		},
+		"3d-printing": {
+			"iconName": "3D printing",
+			"icon": <Box />
+		},
+		"solidworks": {
+			"iconName": "Solidworks",
+			"icon": <DesignIdeas />
+		},
+		"arduino": {
+			"iconName": "Arduino",
+			"icon": <Arduino />
+		}
 	}
 
 	function handleFilter(id) {
@@ -484,7 +499,7 @@ export default function Portifolio() {
 											) : (
 												<div key={index}>
 													<Tooltip toolTipText={topic}>
-														{topicsIcons["Robot"].icon}
+														{topicsIcons["Default"].icon}
 													</Tooltip>
 												</div>
 											)
