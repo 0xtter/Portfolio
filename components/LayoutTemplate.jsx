@@ -168,7 +168,7 @@ export default function LayoutTemplate({ children }) {
 		<>
 			<HeaderContainer>
 				<Fade top delay={100} duration={200}>
-					<Link href="#section-home" passHref>
+					<Link style={{ textDecoration: "none" }} href="#section-home" passHref>
 						<LogoContainer>
 							<LogoText>
 								<CaracteresLogo>&lt;</CaracteresLogo>0xtter <CaracteresLogo>/&gt;</CaracteresLogo>
@@ -179,29 +179,29 @@ export default function LayoutTemplate({ children }) {
 
 				<NavbarOptionContainer>
 					<Fade top delay={100} duration={200}>
-						<Link href="#section-home" passHref>
+						<Link style={{ textDecoration: "none" }} href="#section-home" passHref>
 							<NavbarOption>{language.navbarMenu.labelHome}</NavbarOption>
 						</Link>
 					</Fade>
 
 					<Fade top delay={200} duration={200}>
-						<Link href="#section-services" passHref>
+						<Link style={{ textDecoration: "none" }} href="#section-services" passHref>
 							<NavbarOption>{language.navbarMenu.labelServices}</NavbarOption>
 						</Link>
 					</Fade>
 
 					<Fade top delay={300} duration={200}>
-						<Link href="#section-a-propos" passHref>
+						<Link style={{ textDecoration: "none" }} href="#section-a-propos" passHref>
 							<NavbarOption>{language.navbarMenu.labelAboutMe}</NavbarOption>
 						</Link>
 					</Fade>
 					<Fade top delay={400} duration={200}>
-						<Link href="#section-portifolio" passHref>
+						<Link style={{ textDecoration: "none" }} href="#section-portifolio" passHref>
 							<NavbarOption>{language.navbarMenu.labelPortifolio}</NavbarOption>
 						</Link>
 					</Fade>
 					<Fade top delay={500} duration={200}>
-						<Link href="#section-experiencia" passHref>
+						<Link style={{ textDecoration: "none" }} href="#section-experiencia" passHref>
 							<NavbarOption>{language.navbarMenu.labelExperience}</NavbarOption>
 						</Link>
 					</Fade>

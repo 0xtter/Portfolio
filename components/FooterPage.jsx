@@ -77,6 +77,7 @@ const FooterText = styled.span`
 	margin-top: 3px;
 	margin-bottom: 3px;
 	text-transform: capitalize;
+	
 
 	&:hover {
 		cursor: pointer;
@@ -258,19 +259,19 @@ export default function FooterPage(props) {
 				<ScrollAnimation animateIn="fadeIn" animateOnce>
 					<SectionFooterMenu>
 						<FooterTextTitle>{language.footer.labelNavigation.title}</FooterTextTitle>
-						<Link href="#section-home" passHref>
+						<Link style={{ textDecoration: "none" }} href="#section-home" passHref>
 							<FooterText>{language.footer.labelNavigation.labelHome}</FooterText>
 						</Link>
-						<Link href="#section-services" passHref>
+						<Link style={{ textDecoration: "none" }} href="#section-services" passHref>
 							<FooterText>{language.footer.labelNavigation.labelServices}</FooterText>
 						</Link>
-						<Link href="#section-a-propos" passHref>
+						<Link style={{ textDecoration: "none" }} href="#section-a-propos" passHref>
 							<FooterText>{language.footer.labelNavigation.labelAboutMe}</FooterText>
 						</Link>
-						<Link href="#section-portifolio" passHref>
+						<Link style={{ textDecoration: "none" }} href="#section-portifolio" passHref>
 							<FooterText>{language.footer.labelNavigation.labelPortifolio}</FooterText>
 						</Link>
-						<Link href="#section-experiencia" passHref>
+						<Link style={{ textDecoration: "none" }} href="#section-experiencia" passHref>
 							<FooterText>{language.footer.labelNavigation.labelExperience}</FooterText>
 						</Link>
 					</SectionFooterMenu>
@@ -316,6 +317,7 @@ export default function FooterPage(props) {
 			<Divider />
 			<ContainerBuildCopyright>
 				<LanguageSwitchButton />
+				<SocialNetworkRowStack />
 				<div className="build-and-button-top">
 					<TextBuildProject>
 						{language.footer.labelBuildVersion}: {commit || ""}
