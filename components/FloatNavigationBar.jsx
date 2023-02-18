@@ -60,7 +60,7 @@ export default function FloatNavigationBar(props) {
 
 	return (
 		<NavigationBar>
-			<Link href="#section-home" passHref>
+			<Link style={{ textDecoration: "none" }} href="#section-home" passHref>
 				<NavOption
 					className="button"
 					isActive={active == "#section-home" ? true : false}
@@ -70,7 +70,7 @@ export default function FloatNavigationBar(props) {
 					<Home />
 				</NavOption>
 			</Link>
-			<Link href="#section-services" passHref>
+			<Link style={{ textDecoration: "none" }} href="#section-services" passHref>
 				<NavOption
 					className="button"
 					isActive={active == "#section-services" ? true : false}
@@ -81,7 +81,7 @@ export default function FloatNavigationBar(props) {
 				</NavOption>
 			</Link>
 
-			<Link href="#section-a-propos" passHref>
+			<Link style={{ textDecoration: "none" }} href="#section-a-propos" passHref>
 				<NavOption
 					className="button"
 					isActive={active == "#section-a-propos" ? true : false}
@@ -91,7 +91,7 @@ export default function FloatNavigationBar(props) {
 					<Timeline />
 				</NavOption>
 			</Link>
-			<Link href="#section-portifolio" passHref>
+			<Link style={{ textDecoration: "none" }} href="#section-portifolio" passHref>
 				<NavOption
 					className="button"
 					isActive={active == "#section-portifolio" ? true : false}
@@ -102,7 +102,7 @@ export default function FloatNavigationBar(props) {
 				</NavOption>
 			</Link>
 
-			<Link href="#section-experiencia" passHref>
+			<Link style={{ textDecoration: "none" }} href="#section-experiencia" passHref>
 				<NavOption
 					className="button"
 					isActive={active == "#section-experiencia" ? true : false}
