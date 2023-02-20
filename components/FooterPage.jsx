@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
 import styled from "styled-components";
-import Link from "next/link";
 import ScrollAnimation from "react-animate-on-scroll";
 
 //Contexto
@@ -9,6 +8,7 @@ import { SettingsContext } from "@/context/SettingsContext";
 //Custom components
 import SocialNetworkRowStack from "@/components/SocialNetworkRowStack";
 import LanguageSwitchButton from "@/components/LanguageSwitchButton";
+import { scrollToSection } from "./SmoothScroll";
 
 //Ícones
 import { KeyboardArrowUp } from "@styled-icons/material-outlined/KeyboardArrowUp";
@@ -259,21 +259,21 @@ export default function FooterPage(props) {
 				<ScrollAnimation animateIn="fadeIn" animateOnce>
 					<SectionFooterMenu>
 						<FooterTextTitle>{language.footer.labelNavigation.title}</FooterTextTitle>
-						<Link style={{ textDecoration: "none" }} href="#section-home" passHref>
+						<a style={{ textDecoration: "none" }} href="#section-home" onClick={scrollToSection}>
 							<FooterText>{language.footer.labelNavigation.labelHome}</FooterText>
-						</Link>
-						<Link style={{ textDecoration: "none" }} href="#section-services" passHref>
+						</a>
+						<a style={{ textDecoration: "none" }} href="#section-services" onClick={scrollToSection}>
 							<FooterText>{language.footer.labelNavigation.labelServices}</FooterText>
-						</Link>
-						<Link style={{ textDecoration: "none" }} href="#section-a-propos" passHref>
+						</a>
+						<a style={{ textDecoration: "none" }} href="#section-a-propos" onClick={scrollToSection}>
 							<FooterText>{language.footer.labelNavigation.labelAboutMe}</FooterText>
-						</Link>
-						<Link style={{ textDecoration: "none" }} href="#section-portifolio" passHref>
+						</a>
+						<a style={{ textDecoration: "none" }} href="#section-portifolio" onClick={scrollToSection}>
 							<FooterText>{language.footer.labelNavigation.labelPortifolio}</FooterText>
-						</Link>
-						<Link style={{ textDecoration: "none" }} href="#section-experiencia" passHref>
+						</a>
+						<a style={{ textDecoration: "none" }} href="#section-experiencia" onClick={scrollToSection}>
 							<FooterText>{language.footer.labelNavigation.labelExperience}</FooterText>
-						</Link>
+						</a>
 					</SectionFooterMenu>
 				</ScrollAnimation>
 

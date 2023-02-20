@@ -16,7 +16,7 @@
 		"react-lottie": "^1.2.3",
 		"react-progressbar-on-scroll": "^2.0.0",
 		"react-reveal": "^1.2.2",
-		"react-scroll-motion": "^0.3.2",
+		"react-scroll": "^1.8.9",
 		"react-typed": "^1.2.0",
 		"react-vertical-timeline-component": "^3.6.0",
 		"styled-components": "^5.3.6",

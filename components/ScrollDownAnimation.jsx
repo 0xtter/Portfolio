@@ -33,6 +33,7 @@ export default function ScrollDownAnimation() {
 		},
 	};
 
+
 	return (
 		<ContainerLottie>
 			<Lottie options={defaultOptions} height={"100%"} width={"100%"} isStopped={isStopped} isPaused={isPaused} isClickToPauseDisabled={true} />

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import Link from "next/link";
 
 //Ícones
 import { Home } from "@styled-icons/heroicons-solid/Home";
@@ -8,6 +7,7 @@ import { Code } from "@styled-icons/fluentui-system-regular/Code";
 import { Timeline } from "@styled-icons/fluentui-system-regular/Timeline";
 import { FolderBriefcase } from "@styled-icons/fluentui-system-filled/FolderBriefcase";
 import { Badge } from "@styled-icons/material-outlined/Badge";
+import { scrollToSection } from "./SmoothScroll";
 
 const NavigationBar = styled.div`
 	display: flex;
@@ -60,58 +60,57 @@ export default function FloatNavigationBar(props) {
 
 	return (
 		<NavigationBar>
-			<Link style={{ textDecoration: "none" }} href="#section-home" passHref>
+			<a style={{ textDecoration: "none" }} href="#section-home" onClick={scrollToSection}>
 				<NavOption
 					className="button"
 					isActive={active == "#section-home" ? true : false}
 					onClick={() => {
 						setActive("#section-home");
 					}}>
-					<Home />
+					<Home style={{ pointerEvents: "none" }} />
 				</NavOption>
-			</Link>
-			<Link style={{ textDecoration: "none" }} href="#section-services" passHref>
+			</a>
+			<a style={{ textDecoration: "none" }} href="#section-services" onClick={scrollToSection}>
 				<NavOption
 					className="button"
 					isActive={active == "#section-services" ? true : false}
 					onClick={() => {
 						setActive("#section-services");
 					}}>
-					<Code />
+					<Code style={{ pointerEvents: "none" }} />
 				</NavOption>
-			</Link>
-
-			<Link style={{ textDecoration: "none" }} href="#section-a-propos" passHref>
+			</a>
+			<a style={{ textDecoration: "none" }} href="#section-a-propos" onClick={scrollToSection}>
 				<NavOption
 					className="button"
 					isActive={active == "#section-a-propos" ? true : false}
 					onClick={() => {
 						setActive("#section-a-propos");
 					}}>
-					<Timeline />
+					<Timeline style={{ pointerEvents: "none" }} />
 				</NavOption>
-			</Link>
-			<Link style={{ textDecoration: "none" }} href="#section-portifolio" passHref>
+			</a>
+			<a style={{ textDecoration: "none" }} href="#section-portifolio" onClick={scrollToSection}>
 				<NavOption
 					className="button"
 					isActive={active == "#section-portifolio" ? true : false}
 					onClick={() => {
 						setActive("#section-portifolio");
 					}}>
-					<FolderBriefcase />
+					<FolderBriefcase style={{ pointerEvents: "none" }} />
 				</NavOption>
-			</Link>
+			</a>
 
-			<Link style={{ textDecoration: "none" }} href="#section-experiencia" passHref>
+			<a style={{ textDecoration: "none" }} href="#section-experiencia" onClick={scrollToSection}>
 				<NavOption
 					className="button"
 					isActive={active == "#section-experiencia" ? true : false}
 					onClick={() => {
 						setActive("#section-experiencia");
 					}}>
-					<Badge />
+					<Badge style={{ pointerEvents: "none" }} />
 				</NavOption>
-			</Link>
+			</a>
 		</NavigationBar>
 	);
 }
