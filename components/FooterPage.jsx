@@ -255,6 +255,7 @@ export default function FooterPage(props) {
 			console.error(event.target);
 		}
 	}
+	
 	const goToTop = () => {
 		window.scrollTo({
 			top: 0,
