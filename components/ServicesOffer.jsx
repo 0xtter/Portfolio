@@ -57,8 +57,8 @@ const CardService = styled.div`
 	}
 
 	p {
-		color: ${(props) => props.theme.colors.body};
 		font-size: 16px;
+		color: ${(props) => props.theme.colors.body};
 		font-weight: 400;
 		text-align: center;
 		word-wrap: break-word;
