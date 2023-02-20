@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
 import styled from "styled-components";
-import Link from "next/link";
 import ScrollAnimation from "react-animate-on-scroll";
 
 //Contexto
@@ -9,6 +8,7 @@ import { SettingsContext } from "@/context/SettingsContext";
 //Custom components
 import SocialNetworkRowStack from "@/components/SocialNetworkRowStack";
 import LanguageSwitchButton from "@/components/LanguageSwitchButton";
+import { scrollToSection } from "./SmoothScroll";
 
 //Ícones
 import { KeyboardArrowUp } from "@styled-icons/material-outlined/KeyboardArrowUp";
@@ -245,17 +245,7 @@ export default function FooterPage(props) {
 		}
 	}
 
-	function scrollToSection(event) {
-		event.preventDefault();
-		try {
-			const section = document.querySelector(event.target.parentElement.getAttribute('href'));
-			section.scrollIntoView({ behavior: "smooth" });
-		} catch (error) {
-			console.error(error);
-			console.error(event.target);
-		}
-	}
-	
+
 	const goToTop = () => {
 		window.scrollTo({
 			top: 0,

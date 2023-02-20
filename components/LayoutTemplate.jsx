@@ -7,6 +7,7 @@ import Fade from "react-reveal/Fade";
 
 //Custom components
 import SwitchThemeButton from "@/components/SwitchThemeButton";
+import { scrollToSection } from "./SmoothScroll";
 
 //Contexto
 import { SettingsContext } from "@/context/SettingsContext";
@@ -164,16 +165,6 @@ const SideBarTheme = styled.aside`
 export default function LayoutTemplate({ children }) {
 	const { language } = useContext(SettingsContext);
 
-	function scrollToSection(event) {
-		event.preventDefault();
-		try {
-			const section = document.querySelector(event.target.parentElement.getAttribute('href'));
-			section.scrollIntoView({ behavior: "smooth" });
-		} catch (error) {
-			console.error(error);
-			console.error(event.target);
-		}
-	}
 
 	return (
 		<>
