@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 
 //Third's librarys
-import Link from "next/link";
 import styled from "styled-components";
 import Typed from "react-typed";
 import { useTheme } from "styled-components";
@@ -11,9 +10,9 @@ import ProgressBar from "react-progressbar-on-scroll";
 import Head from "@/components/Head";
 import SocialNetworkRowStack from "@/components/SocialNetworkRowStack";
 import LandingAnimation from "@/components/LandingPageAnimation";
-import FooterPage from "@/components/FooterPage";
 import FloatNavigationBar from "@/components/FloatNavigationBar";
 import ScrollDownAnimation from "@/components/ScrollDownAnimation";
+import { scrollToSection } from "@/components/SmoothScroll";
 
 //Context
 import { SettingsContext } from "@/context/SettingsContext";
@@ -173,9 +172,9 @@ export default function HomePage() {
 					<SubTitleLanding>{language.landingPage.apresentationText}</SubTitleLanding>
 					<Typed strings={["Thomas Desrumeaux"]} typeSpeed={80} className="type-string " />
 					<SubTitleLanding>{language.landingPage.resumeText}</SubTitleLanding>
-					<Link href="#section-a-propos" passHref>
+					<a href="#section-a-propos" onClick={scrollToSection}>
 						<ButtonSaibaMais>{language.landingPage.buttonText}</ButtonSaibaMais>
-					</Link>
+					</a>
 					<SocialNetworkRowStack />
 				</TitleLandingContainer>
 				<ContainerAnimation>
