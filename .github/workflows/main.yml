@@ -1,0 +1,26 @@
+name: Gitea Actions Demo
+run-name: ${{ github.actor }} is testing out Gitea Actions 🚀
+on: [push]
+
+jobs:
+  Explore-Gitea-Actions:
+    runs-on: local
+    steps:
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by github!"
+      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - name: Converts Markdown to HTML
+        uses: jaywcjlove/markdown-to-html-cli@main
+        with:
+          source: README.md
+          output: coverage/action.html
+          github-corners: https://github.com/jaywcjlove/markdown-to-html-cli
+      - name: List files in the repository
+        run: |
+          echo "${{ github.server_url }}/${{ github.repository }}"
+      - run: |
+          ls -la
+      - run: |
+          whoami
