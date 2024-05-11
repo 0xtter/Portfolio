@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 //Custom components
 import TimelineExperienciaFormacao from "@/components/TimelineExperienciaFormacao";
-import { useTheme } from "styled-components";
 
 //Contexto
 import { SettingsContext } from "@/context/SettingsContext";
@@ -23,15 +22,12 @@ const SectionExperiencia = styled.section`
 
 export default function ExperiencePage() {
 	const { language } = useContext(SettingsContext);
-
-	const theme = useTheme();
 	return (
 		<SectionExperiencia id="section-experience">
 			<ContainerTitleSection>
 				<TitleSection>{language.experiencePage.title}</TitleSection>
 			</ContainerTitleSection>
-			<h2 style={{ color: `${theme.colors.branding}` }}>Coming Soon...</h2>
-			{/* <TimelineExperienciaFormacao /> */}
-		</SectionExperiencia >
+			<TimelineExperienciaFormacao />
+		</SectionExperiencia>
 	);
 }

@@ -33,7 +33,7 @@ export default function SettingsProvider({ children }) {
 		setLanguage(!changeLanguage);
 	}
 
-	var language = changeLanguage == true ? enukJson : frfrJson;
+	var language = changeLanguage == false ? enukJson : frfrJson;
 
 	return (
 		<SettingsContext.Provider value={{ changeTheme, changeLanguageLocalization, language }}>
