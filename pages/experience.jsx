@@ -21,12 +21,12 @@ const SectionExperiencia = styled.section`
 	min-height: 100vh;
 `;
 
-export default function Experiencia() {
+export default function ExperiencePage() {
 	const { language } = useContext(SettingsContext);
 
 	const theme = useTheme();
 	return (
-		<SectionExperiencia id="section-experiencia">
+		<SectionExperiencia id="section-experience">
 			<ContainerTitleSection>
 				<TitleSection>{language.experiencePage.title}</TitleSection>
 			</ContainerTitleSection>

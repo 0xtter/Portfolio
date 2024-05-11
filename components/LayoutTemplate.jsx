@@ -173,7 +173,7 @@ export default function LayoutTemplate({ children }) {
 					<Link style={{ textDecoration: "none" }} href="https://0xtter.com" passHref>
 						<LogoContainer>
 							<LogoText>
-								<CaracteresLogo>&lt;</CaracteresLogo>0xtter <CaracteresLogo>/&gt;</CaracteresLogo>
+								<CaracteresLogo>&lt;</CaracteresLogo>Bengo237<CaracteresLogo>/&gt;</CaracteresLogo>
 							</LogoText>
 						</LogoContainer>
 					</Link>

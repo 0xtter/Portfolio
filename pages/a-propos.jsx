@@ -269,7 +269,7 @@ export default function AProposDeMoi(props) {
 
 	useEffect(() => {
 		async function fetchGithubStats() {
-			const response = await fetch("https://api.github.com/users/0xtter");
+			const response = await fetch("https://api.github.com/users/bengo237r");
 			const json = await response.json();
 			setGithubUserData(json);
 		}
@@ -285,7 +285,7 @@ export default function AProposDeMoi(props) {
 							<GithubStatsCard>
 								<div className="background" />
 								<div className="img">
-									<Image src="/img/user-photo.jpg" alt={language.aboutMePage.alt_dev_img} layout="fill" objectFit="cover" className="image-rounded" />
+									<Image src="/img/DYLANE BENGONO.png" alt={language.aboutMePage.alt_dev_img} layout="fill" objectFit="cover" className="image-rounded" />
 								</div>
 								<div className="content">
 									<h3>{githubUserData?.name}</h3>
@@ -321,7 +321,8 @@ export default function AProposDeMoi(props) {
 							<p>{language.aboutMePage.paragraph_three}</p>
 							<div className="tech-and-cv">
 								<SocialNetworkRowStack />
-								<ButtonCV href="https://elliptic-explorer.0xtter.com/CV_ThomasDesrumeaux.pdf" target="_blank" data-splitbee-event="Download CV">
+								<ButtonCV href="https://github.com/bengo237/Myresume/raw/main/Dylane%20Bengono-%20Cybersecurity%20Engineer.pdf
+" target="_blank" data-splitbee-event="Download CV">
 									Download CV
 								</ButtonCV>
 							</div>

@@ -162,15 +162,15 @@ export default function HomePage() {
 			<FloatNavigationBar />
 			<ProgressBar color={theme.colors.branding} height={5} />
 			<Head
-				title="Thomas Desrumeaux | Portfolio"
-				metaDescription="Portfolio de Thomas Desrumeaux, projets et compétences"
-				keywords="Thomas Desrumeaux, Cybersécurité, Programmation, CSIRT, Pentesting"
+				title="Dylane Bengono| Portfolio"
+				metaDescription="Portfolio de Dylane Bengono, projets et compétences"
+				keywords="Dylane Bengono, Cybersécurité, Programmation, CSIRT, Pentesting"
 			/>
 			<LandingPageContainer>
 
 				<TitleLandingContainer>
 					<SubTitleLanding>{language.landingPage.apresentationText}</SubTitleLanding>
-					<Typed strings={["Thomas Desrumeaux"]} typeSpeed={80} className="type-string " />
+					<Typed strings={["Dylane Bengono"]} typeSpeed={80} className="type-string " />
 					<SubTitleLanding>{language.landingPage.resumeText}</SubTitleLanding>
 					<a href="#section-a-propos" onClick={scrollToSection}>
 						<ButtonSaibaMais>{language.landingPage.buttonText}</ButtonSaibaMais>

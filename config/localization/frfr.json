@@ -8,8 +8,8 @@
 		"labelExperience": "EXPERIENCES"
 	},
 	"landingPage": {
-		"apresentationText": "Hello World,",
-		"typeText": "Thomas Desrumeaux",
+		"apresentationText": "Bonjour, je suis",
+		"typeText": "Dylane Bengono",
 		"resumeText": "Fasciné par l’informatique et par ses enjeux sécuritaires, je m’oriente dans les métiers de la cybersécurité. Créatif et persévérant, j’aime relever les défis en équipe pour répondre aux enjeux actuels en termes de sécurité informatique.",
 		"buttonText": "A propos de moi"
 	},
@@ -36,15 +36,15 @@
 	},
 	"aboutMePage": {
 		"title": "WHOAMI",
-		"paragraph_one": "Elève en 5ème année à ISEN Lille, je suis actuellement en contrat de professionnalisation à Orange Cyberdefense en tant qu'ingénieur CSIRT.",
-		"paragraph_two": "Ingénieur en cybersécurité expérimenté, je suis passionné par la protection des données et la sécurité informatique. Avec de l'expérience dans l'industrie, je suis spécialisé dans la mise en place de systèmes de sécurité solides pour les entreprises de toutes tailles. Je suis également compétent en matière de tests de pénétration, de conformité réglementaire et de gestion des incidents de sécurité. Mon objectif est de fournir des solutions de sécurité avancées pour aider à protéger les actifs numériques.",
-		"paragraph_three": "En tant que self-hosteur, je crois fermement que chacun devrait avoir le contrôle total sur ses données et ses services en ligne. C'est pourquoi je me suis spécialisé dans l'hébergement de mes propres sites web, applications et services, pour éviter la dépendance aux grands fournisseurs de services en ligne. J'aime partager mes connaissances et expériences avec les autres pour les aider à comprendre les avantages du self-hébergement et à se lancer dans l'aventure. Mon objectif est de faciliter l'accès à l'autonomie en matière de technologies numériques pour tous.",
+		"paragraph_one": "As a Cybersecurity Professional, I hold a Master of Engineering from the National Advanced School Of Engineering Yaounde and certifications including CSCU,CCT, NSE, and CKAD. My expertise spans network security, ethical hacking, and vulnerability assessments, ensuring robust defenses against evolving threats",
+		"paragraph_two": "At adorsys, I excel as a Security Engineer, conducting regular intrusion tests and collaborating with teams to swiftly respond to security incidents. My proactive approach and adeptness in OSINT research contribute to the impregnable security of our offerings",
+		"paragraph_three": "En tant qu'ingénieur en sécurité chez adorsys GmbH & Co. KG, je suis chargé de mettre en place des solutions de protection des terminaux clients et d'assurer un soutien DevOps pour le portefeuille EUDI. De plus, je supervise le cycle de vie du développement de divers projets en tant que mainteneur de projet.",
 		"github_card": {
 			"followers": "followers",
 			"following": "following",
 			"repos": "repos"
 		},
-		"alt_dev_img": "Thomas Desrumeaux"
+		"alt_dev_img": "Dylane Bengono"
 	},
 	"portifolioPage": {
 		"title": "PROJETS",
