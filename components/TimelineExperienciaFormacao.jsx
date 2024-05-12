@@ -92,11 +92,11 @@ export default function TimelinePortifolio(props) {
 						{language.experiencePage.timeline.labelInstitution}: <span>National Advanced School of Engineering of Yaounde</span>
 					</BoldText>
 					<BoldText>
-						{language.experiencePage.timeline.labelCategory}: <span>{language.experiencePage.timeline.labelProfessionalCourse}</span>
+						{language.experiencePage.timeline.labelCategory}: <span>{language.experiencePage.timeline.labelMasterDegree}</span>
 					</BoldText>
 					<BoldText>
 						{language.experiencePage.timeline.labelTitle}:{""}
-						<span> {language.id == "ptbr" ? "Master of Engineering, Cybersecurity and Digital Investigation " : "Cybersecurité & Investigation Numérique"}</span>
+						<span> {language.id == "ptbr" ? "Cybersecurité & Investigation Numérique" : "Master of Engineering, Cybersecurity and Digital Investigation "}</span>
 					</BoldText>
 				</TimelineContent>
 			</VerticalTimelineElement>
@@ -156,7 +156,7 @@ export default function TimelinePortifolio(props) {
 						{language.experiencePage.timeline.labelInstitution}: <span>Centro Universitário Maurício de Nassau</span>
 					</BoldText>
 					<BoldText>
-						{language.experiencePage.timeline.labelCategory}: <span>{language.experiencePage.timeline.labelBachelorDegree}</span>
+						{language.experiencePage.timeline.labelCategory}: <span>{language.experiencePage.timeline.labelMasterDegree}</span>
 					</BoldText>
 					<BoldText>
 						{language.experiencePage.timeline.labelTitle}: <span>Sistemas de Informações</span>
