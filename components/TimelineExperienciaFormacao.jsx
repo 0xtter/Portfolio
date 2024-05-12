@@ -124,7 +124,7 @@ export default function TimelinePortifolio(props) {
 				className="vertical-timeline-element--work"
 				contentStyle={{ borderBottom: `8px solid ${theme.colors.branding}`, boxShadow: "0px 0px 0px 0px #ccc", backgroundColor: theme.colors.backgroundSecondary }}
 				iconStyle={{ background: theme.colors.branding, color: "#fff", boxShadow: `0 0 0 0px ${theme.colors.branding}` }}
-				icon={<LearningAppIcon />}
+				icon={<WorkIcon/>}
 				contentArrowStyle={{
 					borderRight: `7px solid ${theme.colors.backgroundSecondary}`,
 				}}>
@@ -134,7 +134,7 @@ export default function TimelinePortifolio(props) {
 						{language.experiencePage.timeline.labelCompany}: <span>Port Authority of Kribi, PAK</span>
 					</BoldText>
 					<BoldText>
-						{language.experiencePage.timeline.labelCategory}: <span>{language.experiencePage.timeline.labelProfessionalCourse}</span>
+						{language.experiencePage.timeline.labelCategory}: <span>{language.experiencePage.timeline.labelCompany}</span>
 					</BoldText>
 					<BoldText>
 						{language.experiencePage.timeline.labelPosition}: <span>Cybersecurity Engineer Intern</span>
@@ -146,7 +146,7 @@ export default function TimelinePortifolio(props) {
 				className="vertical-timeline-element--work"
 				contentStyle={{ borderBottom: `8px solid ${theme.colors.branding}`, boxShadow: "0px 0px 0px 0px #ccc", backgroundColor: theme.colors.backgroundSecondary }}
 				iconStyle={{ background: theme.colors.branding, color: "#fff", boxShadow: `0 0 0 0px ${theme.colors.branding}` }}
-				icon={<SchoolIcon />}
+				icon={<WorkIcon/>}
 				contentArrowStyle={{
 					borderRight: `7px solid ${theme.colors.backgroundSecondary}`,
 				}}>
@@ -156,10 +156,33 @@ export default function TimelinePortifolio(props) {
 						{language.experiencePage.timeline.labelCompany}: <span>General Delegation for National Security, DGSN</span>
 					</BoldText>
 					<BoldText>
-						{language.experiencePage.timeline.labelCategory}: <span>{language.experiencePage.timeline.labelMasterDegree}</span>
+						{language.experiencePage.timeline.labelCategory}: <span>{language.experiencePage.timeline.labelCompany}</span>
 					</BoldText>
 					<BoldText>
-						{language.experiencePage.timeline.labelTitle}: <span>Sistemas de Informações</span>
+						{language.experiencePage.timeline.labelTitle}: <span>Pre-Engineer Network Security Intern</span>
+					</BoldText>
+				</TimelineContent>
+			</VerticalTimelineElement>
+
+			
+			<VerticalTimelineElement
+				className="vertical-timeline-element--work"
+				contentStyle={{ borderBottom: `8px solid ${theme.colors.branding}`, boxShadow: "0px 0px 0px 0px #ccc", backgroundColor: theme.colors.backgroundSecondary }}
+				iconStyle={{ background: theme.colors.branding, color: "#fff", boxShadow: `0 0 0 0px ${theme.colors.branding}` }}
+				icon={<LearningAppIcon />}
+				contentArrowStyle={{
+					borderRight: `7px solid ${theme.colors.backgroundSecondary}`,
+				}}>
+				<TimelineContent>
+					<h3 style={{ color: theme.colors.branding, padding: "0 10px", borderRadius: "200px", border: `2px solid ${theme.colors.branding}`, marginBottom: "10px" }}>2022</h3>
+					<BoldText>
+						{language.experiencePage.timeline.labelInstitution}: <span>EC-COUNCIL</span>
+					</BoldText>
+					<BoldText>
+						{language.experiencePage.timeline.labelCategory}: <span>{language.experiencePage.timeline.labelProfessionalCourse}</span>
+					</BoldText>
+					<BoldText>
+						{language.experiencePage.timeline.labelTitle}: <span>CSCU: Certified Secure Computer User V2</span>
 					</BoldText>
 				</TimelineContent>
 			</VerticalTimelineElement>
@@ -169,256 +192,129 @@ export default function TimelinePortifolio(props) {
 				contentStyle={{ borderBottom: `8px solid ${theme.colors.branding}`, boxShadow: "0px 0px 0px 0px #ccc", backgroundColor: theme.colors.backgroundSecondary }}
 				iconStyle={{ background: theme.colors.branding, color: "#fff", boxShadow: `0 0 0 0px ${theme.colors.branding}` }}
 				icon={<LearningAppIcon />}
-				contentArrowStyle={{
-					borderRight: `7px solid ${theme.colors.backgroundSecondary}`,
-				}}>
-				<TimelineContent>
-					<h3 style={{ color: theme.colors.branding, padding: "0 10px", borderRadius: "200px", border: `2px solid ${theme.colors.branding}`, marginBottom: "10px" }}>2018</h3>
-					<BoldText>
-						{language.experiencePage.timeline.labelInstitution}: <span>Centro Universitário Maurício de Nassau</span>
-					</BoldText>
-					<BoldText>
-						{language.experiencePage.timeline.labelCategory}: <span>Workshop</span>
-					</BoldText>
-					<BoldText>
-						{language.experiencePage.timeline.labelTitle}: <span>IaaS - Infraestrutura como serviço</span>
-					</BoldText>
-				</TimelineContent>
-			</VerticalTimelineElement>
-			<VerticalTimelineElement
-				className="vertical-timeline-element--work"
-				contentStyle={{ borderBottom: `8px solid ${theme.colors.branding}`, boxShadow: "0px 0px 0px 0px #ccc", backgroundColor: theme.colors.backgroundSecondary }}
-				iconStyle={{ background: theme.colors.branding, boxShadow: `0 0 0 0 ` }}
-				icon={<LearningAppIcon />}
-				contentArrowStyle={{
-					borderRight: `7px solid ${theme.colors.backgroundSecondary}`,
-				}}>
-				<TimelineContent>
-					<h3 style={{ color: theme.colors.branding, padding: "0 10px", borderRadius: "200px", border: `2px solid ${theme.colors.branding}`, marginBottom: "10px" }}>2018</h3>
-					<BoldText>
-						{language.experiencePage.timeline.labelInstitution}: <span>Fábrica de Gênios</span>
-					</BoldText>
-					<BoldText>
-						{language.experiencePage.timeline.labelCategory}: <span>{language.experiencePage.timeline.labelExtensionCourse}</span>
-					</BoldText>
-					<BoldText>
-						{language.experiencePage.timeline.labelTitle}: <span>Arduino - Essencial para Automação Residencial</span>
-					</BoldText>
-				</TimelineContent>
-			</VerticalTimelineElement>
-			<VerticalTimelineElement
-				className="vertical-timeline-element--work"
-				contentStyle={{ borderBottom: `8px solid ${theme.colors.branding}`, boxShadow: "0px 0px 0px 0px #ccc", backgroundColor: theme.colors.backgroundSecondary }}
-				iconStyle={{ background: theme.colors.branding, color: "#fff", boxShadow: `0 0 0 0px ${theme.colors.branding}` }}
-				icon={<LearningAppIcon />}
-				contentArrowStyle={{
-					borderRight: `7px solid ${theme.colors.backgroundSecondary}`,
-				}}>
-				<TimelineContent>
-					<h3 style={{ color: theme.colors.branding, padding: "0 10px", borderRadius: "200px", border: `2px solid ${theme.colors.branding}`, marginBottom: "10px" }}>2019</h3>
-					<BoldText>
-						{language.experiencePage.timeline.labelInstitution}: <span>Udemy</span>
-					</BoldText>
-					<BoldText>
-						{language.experiencePage.timeline.labelCategory}: <span>{language.experiencePage.timeline.labelExtensionCourse}</span>
-					</BoldText>
-					<BoldText>
-						{language.experiencePage.timeline.labelTitle}: <span>Java: Fundamentos de programação</span>
-					</BoldText>
-				</TimelineContent>
-			</VerticalTimelineElement>
-			<VerticalTimelineElement
-				className="vertical-timeline-element--work"
-				contentStyle={{ borderBottom: `8px solid ${theme.colors.branding}`, boxShadow: "0px 0px 0px 0px #ccc", backgroundColor: theme.colors.backgroundSecondary }}
-				iconStyle={{ background: theme.colors.branding, color: "#fff", boxShadow: `0 0 0 0px ${theme.colors.branding}` }}
-				icon={<LearningAppIcon />}
-				contentArrowStyle={{
-					borderRight: `7px solid ${theme.colors.backgroundSecondary}`,
-				}}>
-				<TimelineContent>
-					<h3 style={{ color: theme.colors.branding, padding: "0 10px", borderRadius: "200px", border: `2px solid ${theme.colors.branding}`, marginBottom: "10px" }}>2019</h3>
-					<BoldText>
-						{language.experiencePage.timeline.labelInstitution}: <span>Udemy</span>
-					</BoldText>
-					<BoldText>
-						{language.experiencePage.timeline.labelCategory}: <span>{language.experiencePage.timeline.labelExtensionCourse}</span>
-					</BoldText>
-					<BoldText>
-						{language.experiencePage.timeline.labelTitle}: <span>Framework bootstrap 4 - Completo, prático e responsivo</span>
-					</BoldText>
-				</TimelineContent>
-			</VerticalTimelineElement>
-			<VerticalTimelineElement
-				className="vertical-timeline-element--work"
-				contentStyle={{ borderBottom: `8px solid ${theme.colors.branding}`, boxShadow: "0px 0px 0px 0px #ccc", backgroundColor: theme.colors.backgroundSecondary }}
-				iconStyle={{ background: theme.colors.branding, color: "#fff", boxShadow: `0 0 0 0px ${theme.colors.branding}` }}
-				icon={<LearningAppIcon />}
-				contentArrowStyle={{
-					borderRight: `7px solid ${theme.colors.backgroundSecondary}`,
-				}}>
-				<TimelineContent>
-					<h3 style={{ color: theme.colors.branding, padding: "0 10px", borderRadius: "200px", border: `2px solid ${theme.colors.branding}`, marginBottom: "10px" }}>2019</h3>
-					<BoldText>
-						{language.experiencePage.timeline.labelInstitution}: <span>Udemy</span>
-					</BoldText>
-					<BoldText>
-						{language.experiencePage.timeline.labelCategory}: <span>{language.experiencePage.timeline.labelExtensionCourse}</span>
-					</BoldText>
-					<BoldText>
-						{language.experiencePage.timeline.labelTitle}: <span>Django 2.0 avançado, dominando o framework</span>
-					</BoldText>
-				</TimelineContent>
-			</VerticalTimelineElement>
-			<VerticalTimelineElement
-				className="vertical-timeline-element--work"
-				contentStyle={{ borderBottom: `8px solid ${theme.colors.branding}`, boxShadow: "0px 0px 0px 0px #ccc", backgroundColor: theme.colors.backgroundSecondary }}
-				iconStyle={{ background: theme.colors.branding, color: "#fff", boxShadow: `0 0 0 0px ${theme.colors.branding}` }}
-				icon={<LearningAppIcon />}
-				contentArrowStyle={{
-					borderRight: `7px solid ${theme.colors.backgroundSecondary}`,
-				}}>
-				<TimelineContent>
-					<h3 style={{ color: theme.colors.branding, padding: "0 10px", borderRadius: "200px", border: `2px solid ${theme.colors.branding}`, marginBottom: "10px" }}>2019</h3>
-					<BoldText>
-						{language.experiencePage.timeline.labelInstitution}: <span>Udemy</span>
-					</BoldText>
-					<BoldText>
-						{language.experiencePage.timeline.labelCategory}: <span>{language.experiencePage.timeline.labelExtensionCourse}</span>
-					</BoldText>
-					<BoldText>
-						{language.experiencePage.timeline.labelTitle}: <span>Desenvolvimento de aplicativos Android com Java e Android Studio</span>
-					</BoldText>
-				</TimelineContent>
-			</VerticalTimelineElement>
-
-			<VerticalTimelineElement
-				className="vertical-timeline-element--work"
-				contentStyle={{ borderBottom: `8px solid ${theme.colors.branding}`, boxShadow: "0px 0px 0px 0px #ccc", backgroundColor: theme.colors.backgroundSecondary }}
-				iconStyle={{ background: theme.colors.branding, color: "#fff", boxShadow: `0 0 0 0px ${theme.colors.branding}` }}
-				icon={<LearningAppIcon />}
-				contentArrowStyle={{
-					borderRight: `7px solid ${theme.colors.backgroundSecondary}`,
-				}}>
-				<TimelineContent>
-					<h3 style={{ color: theme.colors.branding, padding: "0 10px", borderRadius: "200px", border: `2px solid ${theme.colors.branding}`, marginBottom: "10px" }}>2019</h3>
-					<BoldText>
-						{language.experiencePage.timeline.labelInstitution}: <span>SENAC - Serviço Nacional de Aprendizagem Comercial</span>
-					</BoldText>
-					<BoldText>
-						{language.experiencePage.timeline.labelCategory}: <span>Workshop</span>
-					</BoldText>
-					<BoldText>
-						{language.experiencePage.timeline.labelTitle}: <span>Relacionamento interpessoal no trabalho</span>
-					</BoldText>
-				</TimelineContent>
-			</VerticalTimelineElement>
-
-			<VerticalTimelineElement
-				className="vertical-timeline-element--work"
-				contentStyle={{ borderBottom: `8px solid ${theme.colors.branding}`, boxShadow: "0px 0px 0px 0px #ccc", backgroundColor: theme.colors.backgroundSecondary }}
-				iconStyle={{ background: theme.colors.branding, color: "#fff", boxShadow: `0 0 0 0px ${theme.colors.branding}` }}
-				icon={<LearningAppIcon />}
-				contentArrowStyle={{
-					borderRight: `7px solid ${theme.colors.backgroundSecondary}`,
-				}}>
-				<TimelineContent>
-					<h3 style={{ color: theme.colors.branding, padding: "0 10px", borderRadius: "200px", border: `2px solid ${theme.colors.branding}`, marginBottom: "10px" }}>2019</h3>
-					<BoldText>
-						{language.experiencePage.timeline.labelInstitution}: <span>The Forense</span>
-					</BoldText>
-					<BoldText>
-						{language.experiencePage.timeline.labelCategory}: <span>Congresso digital</span>
-					</BoldText>
-					<BoldText>
-						{language.experiencePage.timeline.labelTitle}: <span>Direito, Tecnologia e Proteção de Dados</span>
-					</BoldText>
-				</TimelineContent>
-			</VerticalTimelineElement>
-
-			<VerticalTimelineElement
-				className="vertical-timeline-element--work"
-				contentStyle={{ borderBottom: `8px solid ${theme.colors.branding}`, boxShadow: "0px 0px 0px 0px #ccc", backgroundColor: theme.colors.backgroundSecondary }}
-				iconStyle={{ background: theme.colors.branding, color: "#fff", boxShadow: `0 0 0 0px ${theme.colors.branding}` }}
-				icon={<LearningAppIcon />}
-				contentArrowStyle={{
-					borderRight: `7px solid ${theme.colors.backgroundSecondary}`,
-				}}>
-				<TimelineContent>
-					<h3 style={{ color: theme.colors.branding, padding: "0 10px", borderRadius: "200px", border: `2px solid ${theme.colors.branding}`, marginBottom: "10px" }}>2020</h3>
-					<BoldText>
-						{language.experiencePage.timeline.labelInstitution}: <span>Udemy</span>
-					</BoldText>
-					<BoldText>
-						{language.experiencePage.timeline.labelCategory}: <span>{language.experiencePage.timeline.labelExtensionCourse}</span>
-					</BoldText>
-					<BoldText>
-						{language.experiencePage.timeline.labelTitle}: <span>Construção de aplicativos mobile do zero com React Native e Redux</span>
-					</BoldText>
-				</TimelineContent>
-			</VerticalTimelineElement>
-
-			<VerticalTimelineElement
-				className="vertical-timeline-element--work"
-				contentStyle={{ borderBottom: `8px solid ${theme.colors.branding}`, boxShadow: "0px 0px 0px 0px #ccc", backgroundColor: theme.colors.backgroundSecondary }}
-				iconStyle={{ background: theme.colors.branding, color: "#fff", boxShadow: `0 0 0 0px ${theme.colors.branding}` }}
-				icon={<LearningAppIcon />}
-				contentArrowStyle={{
-					borderRight: `7px solid ${theme.colors.backgroundSecondary}`,
-				}}>
-				<TimelineContent>
-					<h3 style={{ color: theme.colors.branding, padding: "0 10px", borderRadius: "200px", border: `2px solid ${theme.colors.branding}`, marginBottom: "10px" }}>2020</h3>
-					<BoldText>
-						{language.experiencePage.timeline.labelInstitution}: <span>Udemy</span>
-					</BoldText>
-					<BoldText>
-						{language.experiencePage.timeline.labelCategory}: <span>{language.experiencePage.timeline.labelExtensionCourse}</span>
-					</BoldText>
-					<BoldText>
-						{language.experiencePage.timeline.labelTitle}: <span>Criando poderosas API's RESTful com Django Rest Framework</span>
-					</BoldText>
-				</TimelineContent>
-			</VerticalTimelineElement>
-
-			<VerticalTimelineElement
-				className="vertical-timeline-element--work"
-				contentStyle={{ borderBottom: `8px solid ${theme.colors.branding}`, boxShadow: "0px 0px 0px 0px #ccc", backgroundColor: theme.colors.backgroundSecondary }}
-				iconStyle={{ background: theme.colors.branding, color: "#fff", boxShadow: `0 0 0 0px ${theme.colors.branding}` }}
-				icon={<LearningAppIcon />}
-				contentArrowStyle={{
-					borderRight: `7px solid ${theme.colors.backgroundSecondary}`,
-				}}>
-				<TimelineContent>
-					<h3 style={{ color: theme.colors.branding, padding: "0 10px", borderRadius: "200px", border: `2px solid ${theme.colors.branding}`, marginBottom: "10px" }}>2020</h3>
-					<BoldText>
-						{language.experiencePage.timeline.labelInstitution}: <span>Alura</span>
-					</BoldText>
-					<BoldText>
-						{language.experiencePage.timeline.labelCategory}: <span>{language.experiencePage.timeline.labelExtensionCourse}</span>
-					</BoldText>
-					<BoldText>
-						{language.experiencePage.timeline.labelTitle}: <span>Fundamentos de SEO: Primeiros passos para ranquear seu site na Busca Orgânica</span>
-					</BoldText>
-				</TimelineContent>
-			</VerticalTimelineElement>
-
-			<VerticalTimelineElement
-				className="vertical-timeline-element--work"
-				contentStyle={{ borderBottom: `8px solid ${theme.colors.branding}`, boxShadow: "0px 0px 0px 0px #ccc", backgroundColor: theme.colors.backgroundSecondary }}
-				iconStyle={{ background: theme.colors.branding, color: "#fff", boxShadow: `0 0 0 0px ${theme.colors.branding}` }}
-				icon={<WorkIcon />}
 				contentArrowStyle={{
 					borderRight: `7px solid ${theme.colors.backgroundSecondary}`,
 				}}>
 				<TimelineContent>
 					<h3 style={{ color: theme.colors.branding, padding: "0 10px", borderRadius: "200px", border: `2px solid ${theme.colors.branding}`, marginBottom: "10px" }}>2021</h3>
 					<BoldText>
-						{language.experiencePage.timeline.labelCompany}: <span>Armazém Paraíba</span>
+						{language.experiencePage.timeline.labelInstitution}: <span>AEC-CTF</span>
 					</BoldText>
 					<BoldText>
-						{language.experiencePage.timeline.labelPosition}: <span>Desenvolvedor Júnior</span>
+						{language.experiencePage.timeline.labelCategory}: <span>Capture The Flag</span>
+					</BoldText>
+					<BoldText>
+						{language.experiencePage.timeline.labelTitle}: <span>Cybersecurity Experts Olympiad </span>
 					</BoldText>
 				</TimelineContent>
 			</VerticalTimelineElement>
-		</VerticalTimeline>
+
+
+			<VerticalTimelineElement
+				className="vertical-timeline-element--work"
+				contentStyle={{ borderBottom: `8px solid ${theme.colors.branding}`, boxShadow: "0px 0px 0px 0px #ccc", backgroundColor: theme.colors.backgroundSecondary }}
+				iconStyle={{ background: theme.colors.branding, color: "#fff", boxShadow: `0 0 0 0px ${theme.colors.branding}` }}
+				icon={<LearningAppIcon />}
+				contentArrowStyle={{
+					borderRight: `7px solid ${theme.colors.backgroundSecondary}`,
+				}}>
+				<TimelineContent>
+					<h3 style={{ color: theme.colors.branding, padding: "0 10px", borderRadius: "200px", border: `2px solid ${theme.colors.branding}`, marginBottom: "10px" }}>2024</h3>
+					<BoldText>
+						{language.experiencePage.timeline.labelInstitution}: <span>EC-COUNCIL</span>
+					</BoldText>
+					<BoldText>
+						{language.experiencePage.timeline.labelCategory}: <span>{language.experiencePage.timeline.labelProfessionalCourse}</span>
+					</BoldText>
+					<BoldText>
+						{language.experiencePage.timeline.labelTitle}: <span>CCT: Certified Cyber Security Technician</span>
+					</BoldText>
+				</TimelineContent>
+			</VerticalTimelineElement>
+			<VerticalTimelineElement
+				className="vertical-timeline-element--work"
+				contentStyle={{ borderBottom: `8px solid ${theme.colors.branding}`, boxShadow: "0px 0px 0px 0px #ccc", backgroundColor: theme.colors.backgroundSecondary }}
+				iconStyle={{ background: theme.colors.branding, color: "#fff", boxShadow: `0 0 0 0px ${theme.colors.branding}` }}
+				icon={<LearningAppIcon />}
+				contentArrowStyle={{
+					borderRight: `7px solid ${theme.colors.backgroundSecondary}`,
+				}}>
+				<TimelineContent>
+					<h3 style={{ color: theme.colors.branding, padding: "0 10px", borderRadius: "200px", border: `2px solid ${theme.colors.branding}`, marginBottom: "10px" }}>2022</h3>
+					<BoldText>
+						{language.experiencePage.timeline.labelInstitution}: <span>Coursera</span>
+					</BoldText>
+					<BoldText>
+						{language.experiencePage.timeline.labelCategory}: <span>{language.experiencePage.timeline.labelProfessionalCourse}</span>
+					</BoldText>
+					<BoldText>
+						{language.experiencePage.timeline.labelTitle}: <span>Penetration Testing, Incident Response and Forensics</span>
+					</BoldText>
+				</TimelineContent>
+			</VerticalTimelineElement>
+			<VerticalTimelineElement
+				className="vertical-timeline-element--work"
+				contentStyle={{ borderBottom: `8px solid ${theme.colors.branding}`, boxShadow: "0px 0px 0px 0px #ccc", backgroundColor: theme.colors.backgroundSecondary }}
+				iconStyle={{ background: theme.colors.branding, color: "#fff", boxShadow: `0 0 0 0px ${theme.colors.branding}` }}
+				icon={<LearningAppIcon />}
+				contentArrowStyle={{
+					borderRight: `7px solid ${theme.colors.backgroundSecondary}`,
+				}}>
+				<TimelineContent>
+					<h3 style={{ color: theme.colors.branding, padding: "0 10px", borderRadius: "200px", border: `2px solid ${theme.colors.branding}`, marginBottom: "10px" }}>2023</h3>
+					<BoldText>
+						{language.experiencePage.timeline.labelInstitution}: <span>Cisco Netacad</span>
+					</BoldText>
+					<BoldText>
+						{language.experiencePage.timeline.labelCategory}: <span>{language.experiencePage.timeline.labelProfessionalCourse}</span>
+					</BoldText>
+					<BoldText>
+						{language.experiencePage.timeline.labelTitle}: <span>Cisco Ethical Hacker</span>
+					</BoldText>
+				</TimelineContent>
+			</VerticalTimelineElement>
+			<VerticalTimelineElement
+				className="vertical-timeline-element--work"
+				contentStyle={{ borderBottom: `8px solid ${theme.colors.branding}`, boxShadow: "0px 0px 0px 0px #ccc", backgroundColor: theme.colors.backgroundSecondary }}
+				iconStyle={{ background: theme.colors.branding, color: "#fff", boxShadow: `0 0 0 0px ${theme.colors.branding}` }}
+				icon={<LearningAppIcon />}
+				contentArrowStyle={{
+					borderRight: `7px solid ${theme.colors.backgroundSecondary}`,
+				}}>
+				<TimelineContent>
+					<h3 style={{ color: theme.colors.branding, padding: "0 10px", borderRadius: "200px", border: `2px solid ${theme.colors.branding}`, marginBottom: "10px" }}>2022</h3>
+					<BoldText>
+						{language.experiencePage.timeline.labelInstitution}: <span>Fortinet</span>
+					</BoldText>
+					<BoldText>
+						{language.experiencePage.timeline.labelCategory}: <span>{language.experiencePage.timeline.labelProfessionalCourse}</span>
+					</BoldText>
+					<BoldText>
+						{language.experiencePage.timeline.labelTitle}: <span>NSE3: Network Security Associate 3</span>
+					</BoldText>
+				</TimelineContent>
+			</VerticalTimelineElement>
+			<VerticalTimelineElement
+			className="vertical-timeline-element--work"
+				contentStyle={{ borderBottom: `8px solid ${theme.colors.branding}`, boxShadow: "0px 0px 0px 0px #ccc", backgroundColor: theme.colors.backgroundSecondary }}
+				iconStyle={{ background: theme.colors.branding, color: "#fff", boxShadow: `0 0 0 0px ${theme.colors.branding}` }}
+				icon={<LearningAppIcon />}
+				contentArrowStyle={{
+					borderRight: `7px solid ${theme.colors.backgroundSecondary}`,
+				}}>
+				<TimelineContent>
+					<h3 style={{ color: theme.colors.branding, padding: "0 10px", borderRadius: "200px", border: `2px solid ${theme.colors.branding}`, marginBottom: "10px" }}>2023</h3>
+					<BoldText>
+						{language.experiencePage.timeline.labelInstitution}: <span>Fortinet</span>
+					</BoldText>
+					<BoldText>
+						{language.experiencePage.timeline.labelCategory}: <span>{language.experiencePage.timeline.labelProfessionalCourse}</span>
+					</BoldText>
+					<BoldText>
+						{language.experiencePage.timeline.labelTitle}: <span>CPTA: Certified Purple Team Analyst V2 </span>
+					</BoldText>
+				</TimelineContent>
+				</VerticalTimelineElement>
+			</VerticalTimeline>
 	);
 }
