@@ -82,10 +82,6 @@
 		"labelTechs": {
 			"title": "TECHNOLOGIES"
 		},
-		"labelStats": {
-			"title": "STATISTICS",
-			"stats": "Dashboard"
-		},
 		"labelBuildVersion": "Version"
 	}
 }
