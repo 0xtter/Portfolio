@@ -80,7 +80,7 @@ export default function SocialNetworkRowStack() {
 				<LinkedinSquare />
 			</ButtonSocialMediaIcon>
 
-			<ButtonSocialMediaIcon href="https://x.com/https://twitter.com/chaneldylaneben" target="_blank">
+			<ButtonSocialMediaIcon href="https://x.com/chaneldylaneben" target="_blank">
 				<Twitter />
 			</ButtonSocialMediaIcon>
 

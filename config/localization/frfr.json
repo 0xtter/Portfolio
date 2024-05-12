@@ -74,13 +74,17 @@
 			"labelExperience": "Expériences"
 		},
 		"labelHost": {
-			"title": "HEBERGEMENT"
+			"title": "FORMATIONS"
 		},
 		"labelSourceCode": {
 			"title": "CODE SOURCE"
 		},
 		"labelTechs": {
 			"title": "TECHNOLOGIES"
+		},
+		"labelStats": {
+			"title": "STATISTICS",
+			"stats": "Dashboard"
 		},
 		"labelBuildVersion": "Version"
 	}

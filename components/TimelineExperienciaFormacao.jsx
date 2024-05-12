@@ -89,7 +89,7 @@ export default function TimelinePortifolio(props) {
 				<TimelineContent>
 					<h3 style={{ color: theme.colors.branding, padding: "0 10px", borderRadius: "200px", border: `2px solid ${theme.colors.branding}`, marginBottom: "10px" }}>2023</h3>
 					<BoldText>
-						{language.experiencePage.timeline.labelInstitution}: <span>National Advanced School of Engineering of Yaounde</span>
+						{language.experiencePage.timeline.labelInstitution}: <span>National Advanced School of Engineering,Yaounde</span>
 					</BoldText>
 					<BoldText>
 						{language.experiencePage.timeline.labelCategory}: <span>{language.experiencePage.timeline.labelMasterDegree}</span>
@@ -112,10 +112,10 @@ export default function TimelinePortifolio(props) {
 				<TimelineContent>
 					<h3 style={{ color: theme.colors.branding, padding: "0 10px", borderRadius: "200px", border: `2px solid ${theme.colors.branding}`, marginBottom: "10px" }}>2024</h3>
 					<BoldText>
-						{language.experiencePage.timeline.labelCompany}: <span>adorsys GmbH & Co. KG}</span>
+						{language.experiencePage.timeline.labelCompany}: <span>a dorsys GmbH & Co. KG</span>
 					</BoldText>
 					<BoldText>
-						{language.experiencePage.timeline.labelPosition}: <span>Security Engineer</span>
+						{language.experiencePage.timeline.labelPosition}: <span> Security Engineer</span>
 					</BoldText>
 				</TimelineContent>
 			</VerticalTimelineElement>
@@ -305,7 +305,7 @@ export default function TimelinePortifolio(props) {
 				<TimelineContent>
 					<h3 style={{ color: theme.colors.branding, padding: "0 10px", borderRadius: "200px", border: `2px solid ${theme.colors.branding}`, marginBottom: "10px" }}>2023</h3>
 					<BoldText>
-						{language.experiencePage.timeline.labelInstitution}: <span>Fortinet</span>
+						{language.experiencePage.timeline.labelInstitution}: <span>CyberWarefare Lab</span>
 					</BoldText>
 					<BoldText>
 						{language.experiencePage.timeline.labelCategory}: <span>{language.experiencePage.timeline.labelProfessionalCourse}</span>
