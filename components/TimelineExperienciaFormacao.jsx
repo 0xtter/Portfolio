@@ -95,8 +95,8 @@ export default function TimelinePortifolio(props) {
 						{language.experiencePage.timeline.labelCategory}: <span>{language.experiencePage.timeline.labelProfessionalCourse}</span>
 					</BoldText>
 					<BoldText>
-						{language.experiencePage.timeline.labelTitle}:{"aster of Engineering, Cybersecurity and Digital Investigation "}
-						<span> {language.id == "ptbr" ? "Administração, empregabilidade, digitação e informática fundamental" : "Administration, employability, typing and fundamental informatics"}</span>
+						{language.experiencePage.timeline.labelTitle}:{""}
+						<span> {language.id == "ptbr" ? "Master of Engineering, Cybersecurity and Digital Investigation " : "Cybersecurité & Investigation Numérique"}</span>
 					</BoldText>
 				</TimelineContent>
 			</VerticalTimelineElement>
