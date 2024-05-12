@@ -281,8 +281,8 @@ export default function FooterPage(props) {
 					<SectionFooterMenu>
 						<FooterTextTitle>{language.footer.labelHost.title}</FooterTextTitle>
 
-						<FooterTextExternalLink href="https://github.com/awesome-selfhosted/awesome-selfhosted" target="_blank">
-							Self-Hosting
+						<FooterTextExternalLink href="https://t.me/kmerbooking" target="_blank">
+						Kmer Booking Free Books
 						</FooterTextExternalLink>
 					</SectionFooterMenu>
 				</ScrollAnimation>
