@@ -134,9 +134,6 @@ export default function TimelinePortifolio(props) {
 						{language.experiencePage.timeline.labelCompany}: <span>Port Authority of Kribi, PAK</span>
 					</BoldText>
 					<BoldText>
-						{language.experiencePage.timeline.labelCategory}: <span>{language.experiencePage.timeline.labelCompany}</span>
-					</BoldText>
-					<BoldText>
 						{language.experiencePage.timeline.labelPosition}: <span>Cybersecurity Engineer Intern</span>
 					</BoldText>
 				</TimelineContent>
@@ -154,9 +151,6 @@ export default function TimelinePortifolio(props) {
 					<h3 style={{ color: theme.colors.branding, padding: "0 10px", borderRadius: "200px", border: `2px solid ${theme.colors.branding}`, marginBottom: "10px" }}>2014</h3>
 					<BoldText>
 						{language.experiencePage.timeline.labelCompany}: <span>General Delegation for National Security, DGSN</span>
-					</BoldText>
-					<BoldText>
-						{language.experiencePage.timeline.labelCategory}: <span>{language.experiencePage.timeline.labelCompany}</span>
 					</BoldText>
 					<BoldText>
 						{language.experiencePage.timeline.labelTitle}: <span>Pre-Engineer Network Security Intern</span>
