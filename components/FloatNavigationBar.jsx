@@ -101,12 +101,12 @@ export default function FloatNavigationBar(props) {
 				</NavOption>
 			</a>
 
-			<a style={{ textDecoration: "none" }} href="#section-experiencia" onClick={scrollToSection}>
+			<a style={{ textDecoration: "none" }} href="#section-experience" onClick={scrollToSection}>
 				<NavOption
 					className="button"
-					isActive={active == "#section-experiencia" ? true : false}
+					isActive={active == "#section-experience" ? true : false}
 					onClick={() => {
-						setActive("#section-experiencia");
+						setActive("#section-experience");
 					}}>
 					<Badge style={{ pointerEvents: "none" }} />
 				</NavOption>

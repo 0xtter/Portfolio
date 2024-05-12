@@ -71,7 +71,7 @@ export default function SocialNetworkRowStack() {
 				<MailSend />
 			</ButtonSocialMediaIcon>
 
-			<ButtonSocialMediaIcon href="https://www.linkedin.com/in/chanel-dylane-b-91b850194//	" target="_blank" data-splitbee-event="linkedin-access">
+			<ButtonSocialMediaIcon href="https://www.linkedin.com/in/chanel-dylane-b-91b850194" target="_blank" data-splitbee-event="linkedin-access">
 				<LinkedinSquare />
 			</ButtonSocialMediaIcon>
 

@@ -271,7 +271,7 @@ export default function FooterPage(props) {
 						<a style={{ textDecoration: "none" }} href="#section-portifolio" onClick={scrollToSection}>
 							<FooterText>{language.footer.labelNavigation.labelPortifolio}</FooterText>
 						</a>
-						<a style={{ textDecoration: "none" }} href="#section-experiencia" onClick={scrollToSection}>
+						<a style={{ textDecoration: "none" }} href="#section-experience" onClick={scrollToSection}>
 							<FooterText>{language.footer.labelNavigation.labelExperience}</FooterText>
 						</a>
 					</SectionFooterMenu>

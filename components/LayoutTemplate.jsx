@@ -203,7 +203,7 @@ export default function LayoutTemplate({ children }) {
 						</a>
 					</Fade>
 					<Fade top delay={500} duration={200}>
-						<a style={{ textDecoration: "none" }} href="#section-experiencia" onClick={scrollToSection}>
+						<a style={{ textDecoration: "none" }} href="#section-experience" onClick={scrollToSection}>
 							<NavbarOption>{language.navbarMenu.labelExperience}</NavbarOption>
 						</a>
 					</Fade>
