@@ -63,19 +63,19 @@ export default function SocialNetworkRowStack() {
 	return (
 		<SocialMediaContainer>
 
-			<ButtonSocialMediaIcon href="https://github.com/0xtter" target="_blank">
+			<ButtonSocialMediaIcon href="https://github.com/bengo237" target="_blank">
 				<Github />
 			</ButtonSocialMediaIcon>
 
-			<ButtonSocialMediaIcon href="mailto:contact.0xtter@gmail.com" target="_blank">
+			<ButtonSocialMediaIcon href="mailto:chaneldylanebengono@gmail.com" target="_blank">
 				<MailSend />
 			</ButtonSocialMediaIcon>
 
-			<ButtonSocialMediaIcon href="https://www.linkedin.com/in/thomasdesrumeaux/	" target="_blank" data-splitbee-event="linkedin-access">
+			<ButtonSocialMediaIcon href="https://www.linkedin.com/in/chanel-dylane-b-91b850194//	" target="_blank" data-splitbee-event="linkedin-access">
 				<LinkedinSquare />
 			</ButtonSocialMediaIcon>
 
-			<ButtonSocialMediaIcon href="https://twitter.com/_ThomasDx_" target="_blank">
+			<ButtonSocialMediaIcon href="https://x.com/https://twitter.com/chaneldylaneben" target="_blank">
 				<Twitter />
 			</ButtonSocialMediaIcon>
 
