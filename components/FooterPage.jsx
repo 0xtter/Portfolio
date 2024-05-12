@@ -304,10 +304,6 @@ export default function FooterPage(props) {
 							Keycloak
 						</FooterTextExternalLink>
 
-
-
-						<FooterTextTitle>{language.footer.labelTechs.title}</FooterTextTitle>
-
 						<FooterTextExternalLink href="https://www.docker.com" target="_blank">
 							Docker
 						</FooterTextExternalLink>
