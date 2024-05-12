@@ -110,12 +110,12 @@ export default function TimelinePortifolio(props) {
 					borderRight: `7px solid ${theme.colors.backgroundSecondary}`,
 				}}>
 				<TimelineContent>
-					<h3 style={{ color: theme.colors.branding, padding: "0 10px", borderRadius: "200px", border: `2px solid ${theme.colors.branding}`, marginBottom: "10px" }}>2013</h3>
+					<h3 style={{ color: theme.colors.branding, padding: "0 10px", borderRadius: "200px", border: `2px solid ${theme.colors.branding}`, marginBottom: "10px" }}>2024</h3>
 					<BoldText>
-						{language.experiencePage.timeline.labelCompany}: <span>Armazém Paraíba</span>
+						{language.experiencePage.timeline.labelCompany}: <span>adorsys GmbH & Co. KG}</span>
 					</BoldText>
 					<BoldText>
-						{language.experiencePage.timeline.labelPosition}: <span>Auxiliar administrativo</span>
+						{language.experiencePage.timeline.labelPosition}: <span>Security Engineer</span>
 					</BoldText>
 				</TimelineContent>
 			</VerticalTimelineElement>
@@ -129,15 +129,15 @@ export default function TimelinePortifolio(props) {
 					borderRight: `7px solid ${theme.colors.backgroundSecondary}`,
 				}}>
 				<TimelineContent>
-					<h3 style={{ color: theme.colors.branding, padding: "0 10px", borderRadius: "200px", border: `2px solid ${theme.colors.branding}`, marginBottom: "10px" }}>2014</h3>
+					<h3 style={{ color: theme.colors.branding, padding: "0 10px", borderRadius: "200px", border: `2px solid ${theme.colors.branding}`, marginBottom: "10px" }}>2023</h3>
 					<BoldText>
-						{language.experiencePage.timeline.labelInstitution}: <span>SENAC - Serviço Nacional de Aprendizagem Comercial</span>
+						{language.experiencePage.timeline.labelCompany}: <span>Port Authority of Kribi, PAK</span>
 					</BoldText>
 					<BoldText>
 						{language.experiencePage.timeline.labelCategory}: <span>{language.experiencePage.timeline.labelProfessionalCourse}</span>
 					</BoldText>
 					<BoldText>
-						{language.experiencePage.timeline.labelTitle}: <span>Aperfeiçoamento em operações logísticas</span>
+						{language.experiencePage.timeline.labelPosition}: <span>Cybersecurity Engineer Intern</span>
 					</BoldText>
 				</TimelineContent>
 			</VerticalTimelineElement>
@@ -153,7 +153,7 @@ export default function TimelinePortifolio(props) {
 				<TimelineContent>
 					<h3 style={{ color: theme.colors.branding, padding: "0 10px", borderRadius: "200px", border: `2px solid ${theme.colors.branding}`, marginBottom: "10px" }}>2014</h3>
 					<BoldText>
-						{language.experiencePage.timeline.labelInstitution}: <span>Centro Universitário Maurício de Nassau</span>
+						{language.experiencePage.timeline.labelCompany}: <span>General Delegation for National Security, DGSN</span>
 					</BoldText>
 					<BoldText>
 						{language.experiencePage.timeline.labelCategory}: <span>{language.experiencePage.timeline.labelMasterDegree}</span>
