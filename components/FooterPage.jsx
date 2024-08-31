@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import styled from "styled-components";
-import ScrollAnimation from "react-animate-on-scroll";
+import { Fade } from "react-awesome-reveal";
 
 //Contexto
 import { SettingsContext } from "@/context/SettingsContext";
@@ -256,7 +256,7 @@ export default function FooterPage(props) {
 	return (
 		<FooterContainer>
 			<div id="grid">
-				<ScrollAnimation animateIn="fadeIn" animateOnce>
+				<Fade triggerOnce>
 					<SectionFooterMenu>
 						<FooterTextTitle>{language.footer.labelNavigation.title}</FooterTextTitle>
 						<a style={{ textDecoration: "none" }} href="#section-home" onClick={scrollToSection}>
@@ -275,9 +275,9 @@ export default function FooterPage(props) {
 							<FooterText>{language.footer.labelNavigation.labelExperience}</FooterText>
 						</a>
 					</SectionFooterMenu>
-				</ScrollAnimation>
+				</Fade>
 
-				<ScrollAnimation animateIn="fadeIn" animateOnce delay={200}>
+				<Fade triggerOnce delay={200}>
 					<SectionFooterMenu>
 						<FooterTextTitle>{language.footer.labelHost.title}</FooterTextTitle>
 
@@ -285,18 +285,18 @@ export default function FooterPage(props) {
 							Self-Hosting
 						</FooterTextExternalLink>
 					</SectionFooterMenu>
-				</ScrollAnimation>
+				</Fade>
 
-				<ScrollAnimation animateIn="fadeIn" animateOnce delay={400}>
+				<Fade triggerOnce delay={400}>
 					<SectionFooterMenu>
 						<FooterTextTitle>{language.footer.labelSourceCode.title}</FooterTextTitle>
 						<FooterTextExternalLink href="https://github.com/0xtter/Portfolio" target="_blank">
 							Github
 						</FooterTextExternalLink>
 					</SectionFooterMenu>
-				</ScrollAnimation>
+				</Fade>
 
-				<ScrollAnimation animateIn="fadeIn" animateOnce delay={600}>
+				<Fade triggerOnce delay={600}>
 					<SectionFooterMenu>
 						<FooterTextTitle>{language.footer.labelTechs.title}</FooterTextTitle>
 
@@ -312,7 +312,7 @@ export default function FooterPage(props) {
 							Styled components
 						</FooterTextExternalLink>
 					</SectionFooterMenu>
-				</ScrollAnimation>
+				</Fade>
 			</div>
 			<Divider />
 			<ContainerBuildCopyright>

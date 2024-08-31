@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
-import ScrollAnimation from "react-animate-on-scroll";
+import { Fade } from "react-awesome-reveal";
 
 //Styled icons
 import { MagnifyingGlass } from "@styled-icons/entypo/MagnifyingGlass";
@@ -107,35 +107,35 @@ export default function _ServicesOffer() {
 	return (
 		<SectionServices id="section-services">
 			<ContainerGrid>
-				<ScrollAnimation animateIn="fadeIn" animateOnce delay={200}>
+				<Fade triggerOnce delay={200}>
 					<CardService>
 						<MagnifyingGlass />
 						<h3>{language.servicesOffer.cards.forensique.title}</h3>
 						<p>{language.servicesOffer.cards.forensique.contentText}</p>
 					</CardService>
-				</ScrollAnimation>
+				</Fade>
 
-				<ScrollAnimation animateIn="fadeIn" animateOnce delay={400}>
+				<Fade triggerOnce delay={400}>
 					<CardService>
 						<ShieldKeyhole />
 						<h3>{language.servicesOffer.cards.devsecops.title}</h3>
 						<p>{language.servicesOffer.cards.devsecops.contentText}</p>
 					</CardService>
-				</ScrollAnimation>
-				<ScrollAnimation animateIn="fadeIn" animateOnce delay={600}>
+				</Fade>
+				<Fade triggerOnce delay={600}>
 					<CardService>
 						<Password />
 						<h3>{language.servicesOffer.cards.pentesting.title}</h3>
 						<p>{language.servicesOffer.cards.pentesting.contentText}</p>
 					</CardService>
-				</ScrollAnimation>
-				<ScrollAnimation animateIn="fadeIn" animateOnce delay={800}>
+				</Fade>
+				<Fade triggerOnce delay={800}>
 					<CardService>
 						<CodeBlock />
 						<h3>{language.servicesOffer.cards.developpement.title}</h3>
 						<p>{language.servicesOffer.cards.developpement.contentText}</p>
 					</CardService>
-				</ScrollAnimation>
+				</Fade>
 			</ContainerGrid>
 		</SectionServices>
 	);

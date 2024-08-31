@@ -6,7 +6,7 @@ import { SettingsContext } from "@/context/SettingsContext";
 //Third's librarys
 import styled from "styled-components";
 import Image from "next/image";
-import ScrollAnimation from "react-animate-on-scroll";
+import { Fade } from "react-awesome-reveal";
 
 //Custom components
 import SocialNetworkRowStack from "@/components/SocialNetworkRowStack";
@@ -281,11 +281,11 @@ export default function AProposDeMoi(props) {
 			<WrapperAboutMe>
 				<div className="container">
 					<div className="left-view">
-						<ScrollAnimation animateIn="fadeIn" animateOnce delay={200}>
+						<Fade triggerOnce delay={200}>
 							<GithubStatsCard>
 								<div className="background" />
 								<div className="img">
-									<Image src="/img/user-photo.jpg" alt={language.aboutMePage.alt_dev_img} layout="fill" objectFit="cover" className="image-rounded" />
+									<Image src="/img/user-photo.jpg" alt={language.aboutMePage.alt_dev_img} fill className="image-rounded" style={{ objectFit: "cover" }} />
 								</div>
 								<div className="content">
 									<h3>{githubUserData?.name}</h3>
@@ -311,10 +311,10 @@ export default function AProposDeMoi(props) {
 									</div>
 								</div>
 							</GithubStatsCard>
-						</ScrollAnimation>
+						</Fade>
 					</div>
 					<div className="right-view">
-						<ScrollAnimation animateIn="fadeIn" animateOnce delay={200}>
+						<Fade triggerOnce delay={200}>
 							<h3>{language.aboutMePage.title}</h3>
 							<p>{language.aboutMePage.paragraph_one}</p>
 							<p>{language.aboutMePage.paragraph_two}</p>
@@ -325,7 +325,7 @@ export default function AProposDeMoi(props) {
 									Download CV
 								</ButtonCV>
 							</div>
-						</ScrollAnimation>
+						</Fade>
 					</div>
 				</div>
 				<TechGrid />

@@ -1,15 +1,12 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import Lottie from "react-lottie";
+import Lottie from "lottie-react";
 import { useTheme } from "styled-components";
 
 //Lotties
 import AnimationYellowBackground from "@/public/lotties/landing-page-yellow.json";
 import AnimationLightBackground from "@/public/lotties/landing-page-light.json";
 
-//Caso necessário alterar as cores da animação
-// https://editor.lottiefiles.com/?fileUrl=https://assets9.lottiefiles.com/packages/lf20_p1qiuawe.json&origin=web&hash=NzI4NTYtc29mdHdhcmUtZGV2ZWxvcG1lbnQ=&src=https://lottiefiles.com/upload-file/editor
-// https://editor.lottiefiles.com/?fileUrl=https://assets8.lottiefiles.com/packages/lf20_EdAmna.json&origin=web&hash=OTI2MS1zY3JvbGwtZG93bg==&src=https://lottiefiles.com/upload-file/editor
 
 const ContainerLottie = styled.div`
 	width: 600px;
@@ -62,7 +59,16 @@ export default function LogoReact() {
 
 	return (
 		<ContainerLottie>
-			<Lottie options={defaultOptions} height={"100%"} width={"100%"} isStopped={isStopped} isPaused={isPaused} isClickToPauseDisabled={true} />
+			<Lottie
+				style={{ height: "100%", width: "100%" }}
+				animationData={defaultOptions.animationData}
+				play={!isStopped}
+				pause={isPaused}
+				loop={defaultOptions.loop}
+				autoplay={defaultOptions.autoplay}
+				rendererSettings={defaultOptions.rendererSettings}
+				hover={false}
+			/>
 		</ContainerLottie>
 	);
 }

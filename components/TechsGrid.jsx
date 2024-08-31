@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import ScrollAnimation from "react-animate-on-scroll";
+import { Fade } from "react-awesome-reveal";
 
 //Contexto
 
@@ -80,138 +80,138 @@ export const TitleSection = styled.h2`
 export default function TechsGrid(props) {
 	return (
 		<TechGrid>
-			<ScrollAnimation animateIn="fadeIn" animateOnce>
+			<Fade triggerOnce>
 				<Tech>
 					<Docker />
 				</Tech>
-			</ScrollAnimation>	
-			<ScrollAnimation animateIn="fadeIn" animateOnce>
+			</Fade>
+			<Fade triggerOnce>
 				<Tech>
 					<Wordpress />
 				</Tech>
-			</ScrollAnimation>	
-			<ScrollAnimation animateIn="fadeIn" animateOnce>
+			</Fade>
+			<Fade triggerOnce>
 				<Tech>
 					<Kalilinux />
 				</Tech>
-			</ScrollAnimation>	
-			<ScrollAnimation animateIn="fadeIn" animateOnce>
+			</Fade>
+			<Fade triggerOnce>
 				<Tech>
 					<Nextcloud />
 				</Tech>
-			</ScrollAnimation>	
-			<ScrollAnimation animateIn="fadeIn" animateOnce>
+			</Fade>
+			<Fade triggerOnce>
 				<Tech>
 					<Nginx />
 				</Tech>
-			</ScrollAnimation>	
-			<ScrollAnimation animateIn="fadeIn" animateOnce>
+			</Fade>
+			<Fade triggerOnce>
 				<Tech>
 					<Amazonaws />
 				</Tech>
-			</ScrollAnimation>	
+			</Fade>
 
-			<ScrollAnimation animateIn="fadeIn" animateOnce>
+			<Fade triggerOnce>
 				<Tech>
 					<Visualstudiocode />
 				</Tech>
-			</ScrollAnimation>
+			</Fade>
 
-			<ScrollAnimation animateIn="fadeIn" animateOnce>
+			<Fade triggerOnce>
 				<Tech>
 					<Mongodb />
 				</Tech>
-			</ScrollAnimation>
+			</Fade>
 
-			<ScrollAnimation animateIn="fadeIn" animateOnce>
+			<Fade triggerOnce>
 				<Tech>
 					<Postgresql />
 				</Tech>
-			</ScrollAnimation>
+			</Fade>
 
-			<ScrollAnimation animateIn="fadeIn" animateOnce>
+			<Fade triggerOnce>
 				<Tech>
 					<Sqlite />
 				</Tech>
-			</ScrollAnimation>
+			</Fade>
 
-			<ScrollAnimation animateIn="fadeIn" animateOnce>
+			<Fade triggerOnce>
 				<Tech>
 					<Javascript />
 				</Tech>
-			</ScrollAnimation>
+			</Fade>
 
-			<ScrollAnimation animateIn="fadeIn" animateOnce>
+			<Fade triggerOnce>
 				<Tech>
 					<Java />
 				</Tech>
-			</ScrollAnimation>
+			</Fade>
 
-			<ScrollAnimation animateIn="fadeIn" animateOnce>
+			<Fade triggerOnce>
 				<Tech>
 					<Python />
 				</Tech>
-			</ScrollAnimation>
+			</Fade>
 
-			<ScrollAnimation animateIn="fadeIn" animateOnce>
+			<Fade triggerOnce>
 				<Tech>
 					<Nodejs />
 				</Tech>
-			</ScrollAnimation>
+			</Fade>
 
-			<ScrollAnimation animateIn="fadeIn" animateOnce>
+			<Fade triggerOnce>
 				<Tech>
 					<Html5 />
 				</Tech>
-			</ScrollAnimation>
+			</Fade>
 
-			<ScrollAnimation animateIn="fadeIn" animateOnce>
+			<Fade triggerOnce>
 				<Tech>
 					<Git />
 				</Tech>
-			</ScrollAnimation>
+			</Fade>
 
-			<ScrollAnimation animateIn="fadeIn" animateOnce>
+			<Fade triggerOnce>
 				<Tech>
 					<Oracle />
 				</Tech>
-			</ScrollAnimation>
-			<ScrollAnimation animateIn="fadeIn" animateOnce>
+			</Fade>
+			<Fade triggerOnce>
 				<Tech>
 					<Mysql />
 				</Tech>
-			</ScrollAnimation>
-			<ScrollAnimation animateIn="fadeIn" animateOnce>
+			</Fade>
+			<Fade triggerOnce>
 				<Tech>
 					<Linux />
 				</Tech>
-			</ScrollAnimation>
-			<ScrollAnimation animateIn="fadeIn" animateOnce>
+			</Fade>
+			<Fade triggerOnce>
 				<Tech>
 					<Windows />
 				</Tech>
-			</ScrollAnimation>
-			<ScrollAnimation animateIn="fadeIn" animateOnce>
+			</Fade>
+			<Fade triggerOnce>
 				<Tech>
 					<Android />
 				</Tech>
-			</ScrollAnimation>
-			<ScrollAnimation animateIn="fadeIn" animateOnce>
+			</Fade>
+			<Fade triggerOnce>
 				<Tech>
 					<Ios />
 				</Tech>
-			</ScrollAnimation>
-			<ScrollAnimation animateIn="fadeIn" animateOnce>
+			</Fade>
+			<Fade triggerOnce>
 				<Tech>
 					<Figma />
 				</Tech>
-			</ScrollAnimation>
+			</Fade>
 
-			<ScrollAnimation animateIn="fadeIn" animateOnce>
+			<Fade triggerOnce>
 				<Tech>
 					<Adobephotoshop />
 				</Tech>
-			</ScrollAnimation>
+			</Fade>
 		</TechGrid>
 	);
 }

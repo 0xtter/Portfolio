@@ -2,14 +2,14 @@ import React, { useContext } from "react";
 
 //Third's librarys
 import styled from "styled-components";
-import Typed from "react-typed";
+import { TypeAnimation } from "react-type-animation";
 import { useTheme } from "styled-components";
-import ProgressBar from "react-progressbar-on-scroll";
+import ProgressBar from "react-scroll-progress-bar";
 
 //Custom components
 import Head from "@/components/Head";
 import SocialNetworkRowStack from "@/components/SocialNetworkRowStack";
-import LandingAnimation from "@/components/LandingPageAnimation";
+import LogoReact from "@/components/LandingPageAnimation";
 import FloatNavigationBar from "@/components/FloatNavigationBar";
 import ScrollDownAnimation from "@/components/ScrollDownAnimation";
 import { scrollToSection } from "@/components/SmoothScroll";
@@ -160,17 +160,17 @@ export default function HomePage() {
 	return (
 		<SectionHomePage id="section-home">
 			<FloatNavigationBar />
-			<ProgressBar color={theme.colors.branding} height={5} />
-			<Head
-				title="Thomas Desrumeaux | Portfolio"
-				metaDescription="Portfolio de Thomas Desrumeaux, projets et compétences"
-				keywords="Thomas Desrumeaux, Cybersécurité, Programmation, CSIRT, Pentesting"
-			/>
+			<ProgressBar bgcolor={theme.colors.branding} height={5} />
 			<LandingPageContainer>
-
 				<TitleLandingContainer>
+					<p>Hello</p>
 					<SubTitleLanding>{language.landingPage.apresentationText}</SubTitleLanding>
-					<Typed strings={["Thomas Desrumeaux"]} typeSpeed={80} className="type-string " />
+					<TypeAnimation
+						sequence={["Thomas Desrumeaux", 5000, "0xtter", 5000]}
+						speed={50}
+						className="type-string"
+						repeat={Infinity}
+					/>
 					<SubTitleLanding>{language.landingPage.resumeText}</SubTitleLanding>
 					<a href="#section-a-propos" onClick={scrollToSection}>
 						<ButtonSaibaMais>{language.landingPage.buttonText}</ButtonSaibaMais>
@@ -178,7 +178,7 @@ export default function HomePage() {
 					<SocialNetworkRowStack />
 				</TitleLandingContainer>
 				<ContainerAnimation>
-					<LandingAnimation />
+					<LogoReact />
 				</ContainerAnimation>
 			</LandingPageContainer>
 			<ScrollDownAnimation />

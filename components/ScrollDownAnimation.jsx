@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { useTheme } from "styled-components";
-import Lottie from "react-lottie";
+import Lottie from "lottie-react";
 
 import ScrollDownLottie from "@/public/lotties/scroll-down.json";
 import ScrollDownLottieLight from "@/public/lotties/scroll-down-light.json";
@@ -42,7 +42,17 @@ export default function ScrollDownAnimation() {
 	return (
 		<ContainerLottie>
 			<a style={{ textDecoration: "none" }} href="#section-services" onClick={scrollToSection}>
-				<Lottie ref={lottieRef} style={{ pointerEvents: "none" }} options={defaultOptions} height={"100%"} width={"100%"} isStopped={isStopped} isPaused={isPaused} isClickToPauseDisabled={true} />
+				<Lottie
+					ref={lottieRef}
+					style={{ pointerEvents: "none", height: "100%", width: "100%" }}
+					animationData={defaultOptions.animationData}
+					play={!isStopped}
+					pause={isPaused}
+					loop={defaultOptions.loop}
+					autoplay={defaultOptions.autoplay}
+					rendererSettings={defaultOptions.rendererSettings}
+					hover={false}
+				/>
 			</a>
 		</ContainerLottie>
 	);

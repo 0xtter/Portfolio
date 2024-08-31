@@ -88,14 +88,14 @@ export default function LanguageSwitchButton() {
 
 	return (
 		<LanguageWrapper>
-			<Image src="/img/frfr.png" alt="Drapeau Francais" width={28} height={28} objectFit="cover" />
+			<Image src="/img/frfr.png" alt="Drapeau Francais" width={28} height={28} style={{ objectFit: "cover" }} />
 			<SwitchButton>
 				<label className="switch">
 					<input type="checkbox" checked={checked} onClick={handleCheckSwitch} readOnly data-splitbee-event="language-change" />
 					<span className="slider round"></span>
 				</label>
 			</SwitchButton>
-			<Image src="/img/enuk.png" alt="Drapeau Angleterre" width={28} height={28} objectFit="cover" />
+			<Image src="/img/enuk.png" alt="Drapeau Angleterre" width={28} height={28} style={{ objectFit: "cover" }} />
 		</LanguageWrapper>
 	);
 }

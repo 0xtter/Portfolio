@@ -9,8 +9,8 @@
 	},
 	"landingPage": {
 		"apresentationText": "Hello World,",
-		"typeText": "Thomas Desrumeaux",
-		"resumeText": "Fasciné par l’informatique et par ses enjeux sécuritaires, je m’oriente dans les métiers de la cybersécurité. Créatif et persévérant, j’aime relever les défis en équipe pour répondre aux enjeux actuels en termes de sécurité informatique.",
+		"typeText": "I'm 0xtter!",
+		"resumeText": "Fasciné par l’informatique et par ses enjeux sécuritaires, j'exerce dans les métiers de la cybersécurité et actuellement en tant qu'analyste CSIRT. Créatif et persévérant, j’aime relever les défis en équipe pour répondre aux enjeux actuels en termes de sécurité informatique.",
 		"buttonText": "A propos de moi"
 	},
 	"servicesOffer": {
@@ -36,7 +36,7 @@
 	},
 	"aboutMePage": {
 		"title": "WHOAMI",
-		"paragraph_one": "Elève en 5ème année à ISEN Lille, je suis actuellement en contrat de professionnalisation à Orange Cyberdefense en tant qu'ingénieur CSIRT.",
+		"paragraph_one": "Je suis actuellement analyse CSIRT à Orange Cyberdefense.",
 		"paragraph_two": "Ingénieur en cybersécurité expérimenté, je suis passionné par la protection des données et la sécurité informatique. Avec de l'expérience dans l'industrie, je suis spécialisé dans la mise en place de systèmes de sécurité solides pour les entreprises de toutes tailles. Je suis également compétent en matière de tests de pénétration, de conformité réglementaire et de gestion des incidents de sécurité. Mon objectif est de fournir des solutions de sécurité avancées pour aider à protéger les actifs numériques.",
 		"paragraph_three": "En tant que self-hosteur, je crois fermement que chacun devrait avoir le contrôle total sur ses données et ses services en ligne. C'est pourquoi je me suis spécialisé dans l'hébergement de mes propres sites web, applications et services, pour éviter la dépendance aux grands fournisseurs de services en ligne. J'aime partager mes connaissances et expériences avec les autres pour les aider à comprendre les avantages du self-hébergement et à se lancer dans l'aventure. Mon objectif est de faciliter l'accès à l'autonomie en matière de technologies numériques pour tous.",
 		"github_card": {
@@ -44,7 +44,7 @@
 			"following": "following",
 			"repos": "repos"
 		},
-		"alt_dev_img": "Thomas Desrumeaux"
+		"alt_dev_img": "0xtter"
 	},
 	"portifolioPage": {
 		"title": "PROJETS",

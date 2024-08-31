@@ -1,4 +1,4 @@
-import React, { useEffect, useState, createContext } from "react";
+import React, { useState, createContext } from "react";
 import { ThemeProvider } from "styled-components";
 
 //Lista de temas
@@ -8,12 +8,6 @@ import { darkTheme, lightTheme } from "@/styles/Theme";
 import frfrJson from "@/config/localization/frfr.json";
 import enukJson from "@/config/localization/enuk.json";
 
-const goToTop = () => {
-	window.scrollTo({
-		top: 0,
-		behavior: "smooth",
-	});
-};
 export const SettingsContext = createContext({});
 
 const listaTemas = {

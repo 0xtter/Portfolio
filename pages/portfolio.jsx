@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import styled from "styled-components";
-import ScrollAnimation from "react-animate-on-scroll";
+import { Fade } from "react-awesome-reveal";
 
 //Context
 import { SettingsContext } from "@/context/SettingsContext";
@@ -471,7 +471,7 @@ export default function Portifolio() {
 			<ContainerGrid view={view}>
 				{data ? (
 					data.map((project, index) => (
-						<ScrollAnimation animateIn="fadeIn" animateOnce key={index}>
+						<Fade triggerOnce key={index}>
 							<WrapperProjectCard>
 								<WrapperTextChip>
 
@@ -524,7 +524,7 @@ export default function Portifolio() {
 									{language.portifolioPage.createdLabel}: {formatDate(project.created_at)}
 								</span>
 							</WrapperProjectCard>
-						</ScrollAnimation>
+						</Fade>
 					))) : (
 					<p>Loading...</p>
 				)}

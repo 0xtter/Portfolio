@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 //Third part librarys
 import Link from "next/link";
 import styled from "styled-components";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";
 
 //Custom components
 import SwitchThemeButton from "@/components/SwitchThemeButton";
@@ -169,7 +169,7 @@ export default function LayoutTemplate({ children }) {
 	return (
 		<>
 			<HeaderContainer>
-				<Fade top delay={100} duration={200}>
+				<Fade direction="down" delay={100} duration={200}>
 					<Link style={{ textDecoration: "none" }} href="https://0xtter.com" passHref>
 						<LogoContainer>
 							<LogoText>
@@ -180,34 +180,34 @@ export default function LayoutTemplate({ children }) {
 				</Fade>
 
 				<NavbarOptionContainer>
-					<Fade top delay={100} duration={200}>
+					<Fade direction="down" delay={100} duration={200}>
 						<a style={{ textDecoration: "none" }} href="#section-home" onClick={scrollToSection}>
 							<NavbarOption>{language.navbarMenu.labelHome}</NavbarOption>
 						</a>
 					</Fade>
 
-					<Fade top delay={200} duration={200}>
+					<Fade direction="down" delay={200} duration={200}>
 						<a style={{ textDecoration: "none" }} href="#section-services" onClick={scrollToSection}>
 							<NavbarOption>{language.navbarMenu.labelServices}</NavbarOption>
 						</a>
 					</Fade>
 
-					<Fade top delay={300} duration={200}>
+					<Fade direction="down" delay={300} duration={200}>
 						<a style={{ textDecoration: "none" }} href="#section-a-propos" onClick={scrollToSection}>
 							<NavbarOption>{language.navbarMenu.labelAboutMe}</NavbarOption>
 						</a>
 					</Fade>
-					<Fade top delay={400} duration={200}>
+					<Fade direction="down" delay={400} duration={200}>
 						<a style={{ textDecoration: "none" }} href="#section-portifolio" onClick={scrollToSection}>
 							<NavbarOption>{language.navbarMenu.labelPortifolio}</NavbarOption>
 						</a>
 					</Fade>
-					<Fade top delay={500} duration={200}>
+					<Fade direction="down" delay={500} duration={200}>
 						<a style={{ textDecoration: "none" }} href="#section-experiencia" onClick={scrollToSection}>
 							<NavbarOption>{language.navbarMenu.labelExperience}</NavbarOption>
 						</a>
 					</Fade>
-					<Fade top delay={600} duration={200}>
+					<Fade direction="down" delay={600} duration={200}>
 						{/* <LanguageSwitchButton /> */}
 						<SwitchThemeButton />
 					</Fade>
@@ -218,7 +218,7 @@ export default function LayoutTemplate({ children }) {
 					<SwitchThemeButton />
 				</SwitchMenuContainer>
 			</HeaderContainer>
-			<Fade left>
+			<Fade direction="left">
 				<SideBarTheme>{/* <ThemeButtons /> */}</SideBarTheme>
 			</Fade>
 
