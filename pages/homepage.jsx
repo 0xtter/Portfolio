@@ -163,7 +163,6 @@ export default function HomePage() {
 			<ProgressBar bgcolor={theme.colors.branding} height={5} />
 			<LandingPageContainer>
 				<TitleLandingContainer>
-					<p>Hello</p>
 					<SubTitleLanding>{language.landingPage.apresentationText}</SubTitleLanding>
 					<TypeAnimation
 						sequence={["Thomas Desrumeaux", 5000, "0xtter", 5000]}
