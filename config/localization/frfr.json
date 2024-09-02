@@ -9,8 +9,7 @@
 	},
 	"landingPage": {
 		"apresentationText": "Hello World,",
-		"typeText": "I'm 0xtter!",
-		"resumeText": "Fasciné par l’informatique et par ses enjeux sécuritaires, j'exerce dans les métiers de la cybersécurité et actuellement en tant qu'analyste CSIRT. Créatif et persévérant, j’aime relever les défis en équipe pour répondre aux enjeux actuels en termes de sécurité informatique.",
+		"resumeText": "🕵️ Analyste CSIRT, j'accompagne les victimes de cyberattaques dans leur compréhension de l'incident et dans la remédiation post-attaque. 🧑‍💻 Self-hoster, je conçois, développe et héberge mes propres outils et infrastructures indépendamment des services cloud. 🤖 Domoticien, je créé et installe des modules domotiques permettant d'automatiser des tâches quotidiennes.",
 		"buttonText": "A propos de moi"
 	},
 	"servicesOffer": {

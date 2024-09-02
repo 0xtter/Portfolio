@@ -1,5 +1,5 @@
 {
-	"id": "frfr",
+	"id": "enuk",
 	"navbarMenu": {
 		"labelHome": "MENU PRINCIPAL",
 		"labelServices": "MES DOMAINES",
@@ -9,8 +9,7 @@
 	},
 	"landingPage": {
 		"apresentationText": "Hello World,",
-		"typeText": "I'm 0xtter!",
-		"resumeText": "Fasciné par l’informatique et par ses enjeux sécuritaires, j'exerce dans les métiers de la cybersécurité et actuellement en tant qu'analyste CSIRT. Créatif et persévérant, j’aime relever les défis en équipe pour répondre aux enjeux actuels en termes de sécurité informatique.",
+		"resumeText": "Fasciné par l'informatique et par ses enjeux sécuritaires, j'exerce dans les métiers de la cybersécurité et actuellement en tant qu'analyste CSIRT. Créatif et persévérant, j’aime relever les défis en équipe pour répondre aux enjeux actuels en termes de sécurité informatique.",
 		"buttonText": "A propos de moi"
 	},
 	"servicesOffer": {
