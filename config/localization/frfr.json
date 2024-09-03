@@ -17,27 +17,31 @@
 		"cards": {
 			"forensique": {
 				"title": "Forensique",
-				"contentText": "Solide connaissances des principes de base de la forensique informatique, y compris les méthodes d'acquisition de données, d'analyse des données et de présentation des preuves."
+				"contentText": "Compétences avancées en forensique digitale: acquisition des données, analyse des preuves et développement d'outils d'analyse."
+			},
+			"reverse": {
+				"title": "Reverse",
+				"contentText": "Solides compétences en analyse statique/dynamique de binaire et en désobfuscation de logiciels malveillants."
 			},
 			"devsecops": {
 				"title": "DevSecOps",
-				"contentText": "Forte compréhension du développement, de la sécurité informatique et de la conformité réglementaire. Compétent en CI/CD, sécurité réseau, tests d'intrusion."
+				"contentText": "Mise en place et hébergement d'outils et de solutions tout en prenant en compte la sécurité informatique et de la conformité réglementaire. Compétent en CI/CD et sécurité réseau."
 			},
-			"pentesting": {
-				"title": "Pentesting",
-				"contentText": "Test d'intrusion et vulnérabilités courantes. Reconnaissance, exploitation, post-exploitation et reporting. Indentification et correction des vulnérabilités pour assurer la sécurité des systèmes et des réseaux."
+			"domotique": {
+				"title": "domotique",
+				"contentText": "Hébergement local de solutions domotiques. Installation, création, connexion d'appareils domotiques permettant d'automatiser des tâches quotidiennes répétitives."
 			},
 			"developpement": {
 				"title": "Développement",
-				"contentText": "Expertise en Java, Python, C++, JavaScript, Bash, Docker et autres. Utilisation avancée de Github pour la gestion de versions et la collaboration sur des projets personnels et professionnels. "
+				"contentText": "Expertise en Java, Python, C/C++, Javascript, Bash, Docker et autres. Utilisation avancée de Github pour la gestion de versions et la collaboration sur des projets personnels et professionnels."
 			}
 		}
 	},
 	"aboutMePage": {
-		"title": "WHOAMI",
-		"paragraph_one": "Je suis actuellement analyse CSIRT à Orange Cyberdefense.",
-		"paragraph_two": "Ingénieur en cybersécurité expérimenté, je suis passionné par la protection des données et la sécurité informatique. Avec de l'expérience dans l'industrie, je suis spécialisé dans la mise en place de systèmes de sécurité solides pour les entreprises de toutes tailles. Je suis également compétent en matière de tests de pénétration, de conformité réglementaire et de gestion des incidents de sécurité. Mon objectif est de fournir des solutions de sécurité avancées pour aider à protéger les actifs numériques.",
-		"paragraph_three": "En tant que self-hosteur, je crois fermement que chacun devrait avoir le contrôle total sur ses données et ses services en ligne. C'est pourquoi je me suis spécialisé dans l'hébergement de mes propres sites web, applications et services, pour éviter la dépendance aux grands fournisseurs de services en ligne. J'aime partager mes connaissances et expériences avec les autres pour les aider à comprendre les avantages du self-hébergement et à se lancer dans l'aventure. Mon objectif est de faciliter l'accès à l'autonomie en matière de technologies numériques pour tous.",
+		"title": "WHOAMI?",
+		"paragraph_one": "Je travaille actuellement en tant qu'analyse CSIRT à Orange Cyberdefense.",
+		"paragraph_two": "Ingénieur cybersécurité expérimenté, je mets un point d'honneur sur la protection des données et la sécurité informatique. Fort de mes expériences personnelles comme professionnelles, je me suis spécialisé dans la mise en place de systèmes de sécurité solides pour les applications que je développe et déploie. Je suis également habile dans la rétro-ingénieurie statique ou dynamique d'applications, me permettant ainsi de compléter mes compétences forensiques avec de l'analyse de malwares souvent obfusqués.",
+		"paragraph_three": "En tant que self-hosteur, je crois fermement que chacun devrait avoir le contrôle total sur ses données et ne doit pas dépendre des services en ligne. Ainsi, pendant mon temps libre j'héberge localement mes propres sites internet, applications et services, au travers de docker et d'outils de virtualisation, notamment afin d'éviter la dépendance aux grands fournisseurs de services en ligne. J'aime partager mes connaissances et expériences avec les autres pour les aider à comprendre les avantages du self-hosting et à se lancer dans l'aventure. De manière analogue, j'héberge directement plusieurs outils de domotique avancés auquels contribue régulièrement au développement.",
 		"github_card": {
 			"followers": "followers",
 			"following": "following",

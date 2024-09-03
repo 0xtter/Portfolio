@@ -4,8 +4,9 @@ import { Fade } from "react-awesome-reveal";
 
 //Styled icons
 import { MagnifyingGlass } from "@styled-icons/entypo/MagnifyingGlass";
+import { WindowWrench } from "@styled-icons/fluentui-system-filled/WindowWrench";
 import { ShieldKeyhole } from "@styled-icons/fluentui-system-filled/ShieldKeyhole";
-import { Password } from "@styled-icons/fluentui-system-filled/Password";
+import { Homeassistant } from "@styled-icons/simple-icons/Homeassistant";
 import { CodeBlock } from "@styled-icons/boxicons-regular/CodeBlock";
 
 //Contexto
@@ -75,7 +76,7 @@ const CardService = styled.div`
 
 const ContainerGrid = styled.div`
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(5, 1fr);
 	transition: all 0.3s ease;
 	gap: 20px;
 	justify-items: center;
@@ -114,22 +115,29 @@ export default function _ServicesOffer() {
 						<p>{language.servicesOffer.cards.forensique.contentText}</p>
 					</CardService>
 				</Fade>
-
 				<Fade triggerOnce delay={400}>
+					<CardService>
+						<WindowWrench />
+						<h3>{language.servicesOffer.cards.reverse.title}</h3>
+						<p>{language.servicesOffer.cards.reverse.contentText}</p>
+					</CardService>
+				</Fade>
+
+				<Fade triggerOnce delay={600}>
 					<CardService>
 						<ShieldKeyhole />
 						<h3>{language.servicesOffer.cards.devsecops.title}</h3>
 						<p>{language.servicesOffer.cards.devsecops.contentText}</p>
 					</CardService>
 				</Fade>
-				<Fade triggerOnce delay={600}>
+				<Fade triggerOnce delay={800}>
 					<CardService>
-						<Password />
-						<h3>{language.servicesOffer.cards.pentesting.title}</h3>
-						<p>{language.servicesOffer.cards.pentesting.contentText}</p>
+						<Homeassistant />
+						<h3>{language.servicesOffer.cards.domotique.title}</h3>
+						<p>{language.servicesOffer.cards.domotique.contentText}</p>
 					</CardService>
 				</Fade>
-				<Fade triggerOnce delay={800}>
+				<Fade triggerOnce delay={1000}>
 					<CardService>
 						<CodeBlock />
 						<h3>{language.servicesOffer.cards.developpement.title}</h3>
