@@ -122,7 +122,6 @@ export default function _ServicesOffer() {
 						<p>{language.servicesOffer.cards.reverse.contentText}</p>
 					</CardService>
 				</Fade>
-
 				<Fade triggerOnce delay={600}>
 					<CardService>
 						<ShieldKeyhole />

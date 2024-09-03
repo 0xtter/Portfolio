@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { Fade } from "react-awesome-reveal";
 
 //Context
@@ -43,7 +43,6 @@ import { Arduino } from "@styled-icons/simple-icons";
 //Custom components
 import Tooltip from "@/components/Tooltip";
 import FetchData from "@/components/RepositoryList";
-import { D } from "styled-icons/crypto";
 
 const ContainerGrid = styled.div`
 	display: grid;
@@ -250,6 +249,30 @@ const Chip = styled.span`
 		font-weight: 700;
 		font-size: 10px;
 	}
+`;
+
+const pulse = keyframes`
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+`;
+
+export const LoadingText = styled.p`
+  font-size: 18px;
+  font-weight: bold;
+  color: ${(props) => props.theme.colors.branding};
+  text-align: center;
+  margin-top: 20%;
+  animation: ${pulse} 1.5s infinite;
 `;
 
 export const TitleSpan = styled.h3`
@@ -526,7 +549,7 @@ export default function Portifolio() {
 							</WrapperProjectCard>
 						</Fade>
 					))) : (
-					<p>Loading...</p>
+					<LoadingText>Loading...</LoadingText>
 				)}
 			</ContainerGrid>
 		</SectionPortifolio>
